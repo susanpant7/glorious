@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { formatPrice } from "@/lib/formatPrice";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -121,8 +122,8 @@ export default async function ProductDetailPage({ params }: Props) {
                   <div className="rounded-3xl bg-slate-50 p-5">
                     <p className="text-sm text-slate-500">Price</p>
                     <div className="mt-2 flex items-center gap-3">
-                      <span className="text-3xl font-semibold text-slate-950">{product.price}</span>
-                      {product.oldPrice ? <span className="text-sm text-slate-400 line-through">{product.oldPrice}</span> : null}
+                      <span className="text-3xl font-semibold text-slate-950">{formatPrice(product.price)}</span>
+                      {product.oldPrice ? <span className="text-sm text-slate-400 line-through">{formatPrice(product.oldPrice)}</span> : null}
                     </div>
                   </div>
                   <div className="rounded-3xl bg-slate-50 p-5">
@@ -193,7 +194,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         {item.category}
                       </Badge>
                       <p className="font-semibold text-slate-950">{item.name}</p>
-                      <p className="text-sm text-slate-600">{item.price}</p>
+                      <p className="text-sm text-slate-600">{formatPrice(item.price)}</p>
                     </div>
                   </Link>
                 ))}

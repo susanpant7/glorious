@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import type { Product } from "@/lib/products";
+import { formatPrice } from "@/lib/formatPrice";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
@@ -35,9 +36,9 @@ export function ProductCard({ product }: { product: Product }) {
 
           <div className="grid gap-3 text-sm text-slate-500">
             <span>{product.shades}</span>
-            <span className="font-semibold text-slate-950">{product.price}</span>
+            <span className="font-semibold text-slate-950">{formatPrice(product.price)}</span>
             {product.oldPrice ? (
-              <span className="text-slate-400 line-through">{product.oldPrice}</span>
+              <span className="text-slate-400 line-through">{formatPrice(product.oldPrice)}</span>
             ) : null}
           </div>
         </CardContent>
