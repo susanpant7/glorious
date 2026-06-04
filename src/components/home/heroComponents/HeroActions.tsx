@@ -1,20 +1,21 @@
 import Link from "next/link";
 
+import { Button } from "@/components/ui/button";
+import { site } from "@/lib/site";
+
 export function HeroActions() {
   return (
     <div className="flex flex-wrap gap-4">
-      <Link
-        href="/products"
-        className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-slate-950/20 transition hover:bg-slate-100"
+      <Button asChild>
+        <Link href="/products">{site.heroActions.primary}</Link>
+      </Button>
+      <Button
+        asChild
+        variant="outline"
+        className="border-white/30 text-white hover:bg-white/10 hover:text-white"
       >
-        Shop products
-      </Link>
-      <a
-        href="#featured"
-        className="inline-flex rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-      >
-        View listings
-      </a>
+        <a href="#featured">{site.heroActions.secondary}</a>
+      </Button>
     </div>
   );
 }

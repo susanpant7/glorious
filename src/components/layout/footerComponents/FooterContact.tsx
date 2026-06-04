@@ -4,7 +4,7 @@ export function FooterContact() {
   return (
     <div>
       <h4 className="text-sm font-semibold uppercase tracking-wider text-white">Get in Touch</h4>
-      <div className="mt-6 space-y-4 text-sm text-slate-400">
+      <div className="mt-4 space-y-3 text-sm text-slate-400">
         <div className="flex items-start gap-3">
           <span className="mt-0.5 text-lg">📍</span>
           <div>
