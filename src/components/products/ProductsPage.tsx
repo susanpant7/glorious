@@ -7,7 +7,8 @@ import { ActiveFiltersBar } from "@/components/products/ActiveFiltersBar";
 import { FilterSidebar } from "@/components/products/FilterSidebar";
 import { ProductGrid } from "@/components/products/ProductGrid";
 
-function matchesPrice(price: number, value: string) {
+function matchesPrice(priceString: string, value: string) {
+  const price = Number(priceString.replace(/[^0-9]/g, ""));
   switch (value) {
     case "under-300":
       return price < 300;
@@ -40,7 +41,7 @@ export function ProductsPage() {
           }
 
           if (sectionId === "price") {
-            return values.some((value) => matchesPrice(product.priceValue, value));
+            return values.some((value) => matchesPrice(product.price, value));
           }
 
           if (sectionId === "discount") {
