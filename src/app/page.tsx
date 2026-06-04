@@ -1,7 +1,16 @@
+import { HeroSection } from "@/components/home/HeroSection";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { GallerySection } from "@/components/gallery/GallerySection";
+import { NewArrivalsSection } from "@/components/home/NewArrivalsSection";
+import { galleryImages } from "@/lib/gallery";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-600">Hello Glorious</h1>
-    </main>
+    <div className="bg-slate-50">
+      <HeroSection />
+      <NewArrivalsSection />
+      <TestimonialsSection />
+      <GallerySection images={galleryImages} maxItems={4} showViewMore />
+    </div>
   );
 }

@@ -1,0 +1,207 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getProductById, products } from "@/lib/products";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+type Props = {
+  params: Promise<{ id: string }>;
+};
+
+export function generateStaticParams() {
+  return products.map((product) => ({ id: product.id }));
+}
+
+export default async function ProductDetailPage({ params }: Props) {
+  const { id } = await params;
+  const product = getProductById(id);
+  const similarProducts = products.filter(
+    (item) => item.category === product?.category && item.id !== id
+  );
+
+  if (!product) {
+    notFound();
+  }
+
+  return (
+    <div className="bg-slate-50 py-16">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-amber-600">Product details</p>
+            <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
+              {product.name}
+            </h1>
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+              Discover the full product profile with ratings, pricing, and customer reviews for a confident purchase.
+            </p>
+          </div>
+          <Button asChild variant="outline" size="sm">
+            <Link href="/products">Back to products</Link>
+          </Button>
+        </div>
+
+        <div className="space-y-8">
+          <div className="grid gap-6 lg:grid-cols-[1.4fr_0.85fr]">
+            <Card className="overflow-hidden border border-slate-200 shadow-sm">
+              <div className="group relative overflow-hidden bg-slate-100">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="h-[520px] w-full object-cover transition duration-500 ease-out group-hover:scale-110"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/60 to-transparent p-6 text-white">
+                  <Badge variant="secondary" className="mb-3 uppercase tracking-[0.3em]">
+                    {product.category}
+                  </Badge>
+                  <p className="mt-3 text-3xl font-semibold tracking-tight text-white">{product.name}</p>
+                  <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-100">{product.description}</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="border border-slate-200 shadow-sm">
+              <CardHeader className="space-y-3 px-8 pt-8 pb-0">
+                <CardTitle className="text-2xl">Product details</CardTitle>
+                <CardDescription>Click each section to expand for more information.</CardDescription>
+              </CardHeader>
+              <CardContent className="px-8 pb-8">
+                <Table>
+                  <TableHeader>
+                    <tr>
+                      <TableHead>Spec</TableHead>
+                      <TableHead>Value</TableHead>
+                    </tr>
+                  </TableHeader>
+                  <TableBody>
+                    {product.specs.map((spec) => (
+                      <TableRow key={spec.label}>
+                        <TableCell className="font-medium text-slate-600">{spec.label}</TableCell>
+                        <TableCell className="text-slate-950">{spec.value}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[1.4fr_0.85fr]">
+            <Card className="border border-slate-200 shadow-sm">
+              <CardHeader className="space-y-3 px-8 pt-8 pb-0">
+                <CardTitle className="text-2xl">Product information</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4 px-8 pb-8">
+                <Accordion type="single" collapsible className="space-y-4">
+                  {product.sections.map((section) => (
+                    <AccordionItem key={section.id} value={section.id} className="rounded-3xl border border-slate-200 bg-slate-50">
+                      <AccordionTrigger className="px-5 py-4 text-base font-semibold text-slate-950">
+                        {section.title}
+                      </AccordionTrigger>
+                      <AccordionContent className="px-5 pb-4 text-sm leading-7 text-slate-700">
+                        {section.content}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-slate-200 shadow-sm">
+              <CardHeader className="space-y-3 px-8 pt-8 pb-0">
+                <CardTitle className="text-2xl">Quick specs</CardTitle>
+                <CardDescription>Main product data at a glance.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4 px-8 pb-8">
+                <div className="grid gap-4">
+                  <div className="rounded-3xl bg-slate-50 p-5">
+                    <p className="text-sm text-slate-500">Price</p>
+                    <div className="mt-2 flex items-center gap-3">
+                      <span className="text-3xl font-semibold text-slate-950">{product.price}</span>
+                      {product.oldPrice ? <span className="text-sm text-slate-400 line-through">{product.oldPrice}</span> : null}
+                    </div>
+                  </div>
+                  <div className="rounded-3xl bg-slate-50 p-5">
+                    <p className="text-sm text-slate-500">Shades</p>
+                    <p className="mt-2 font-semibold text-slate-950">{product.shades}</p>
+                  </div>
+                  <div className="rounded-3xl bg-slate-50 p-5">
+                    <p className="text-sm text-slate-500">Tone</p>
+                    <p className="mt-2 font-semibold text-slate-950">{product.tone}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="border border-slate-200 shadow-sm">
+            <CardHeader className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-8 pt-8 pb-0">
+              <div>
+                <CardTitle className="text-2xl">Customer reviews</CardTitle>
+                <CardDescription>Read honest feedback from people who have already tried this product.</CardDescription>
+              </div>
+              <div className="text-sm font-semibold text-slate-600">{product.reviews.length} reviews</div>
+            </CardHeader>
+            <CardContent className="space-y-6 px-8 pb-8">
+              {product.reviews.map((review) => (
+                <div key={review.id} className="rounded-3xl bg-slate-50 p-6">
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-center gap-4">
+                      <Avatar>
+                        <AvatarImage src={review.avatar} alt={review.author} />
+                        <AvatarFallback>{review.author.charAt(0)}</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="font-semibold text-slate-950">{review.author}</p>
+                        <p className="text-sm text-slate-500">{review.date}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1 text-amber-600">
+                      {Array.from({ length: review.rating }, (_, index) => (
+                        <span key={index}>★</span>
+                      ))}
+                      {Array.from({ length: 5 - review.rating }, (_, index) => (
+                        <span key={index} className="text-slate-300">★</span>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="mt-4 text-slate-700">{review.content}</p>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+
+          {similarProducts.length > 0 ? (
+            <Card className="border border-slate-200 shadow-sm">
+              <CardHeader className="px-8 pt-8 pb-0">
+                <CardTitle className="text-2xl">Similar products</CardTitle>
+              </CardHeader>
+              <CardContent className="grid gap-4 px-8 pb-8 sm:grid-cols-2 xl:grid-cols-3">
+                {similarProducts.map((item) => (
+                  <Link
+                    key={item.id}
+                    href={`/products/${item.id}`}
+                    className="group overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <img src={item.image} alt={item.name} className="h-40 w-full object-cover transition duration-500 group-hover:scale-105" />
+                    <div className="space-y-2 p-5">
+                      <Badge variant="secondary" className="uppercase tracking-[0.28em] text-[11px]">
+                        {item.category}
+                      </Badge>
+                      <p className="font-semibold text-slate-950">{item.name}</p>
+                      <p className="text-sm text-slate-600">{item.price}</p>
+                    </div>
+                  </Link>
+                ))}
+              </CardContent>
+            </Card>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+}
