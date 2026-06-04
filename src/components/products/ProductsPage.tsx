@@ -40,7 +40,7 @@ export function ProductsPage() {
           }
 
           if (sectionId === "price") {
-            return values.some((value) => matchesPrice(product.priceValue, value));
+            return values.some((value) => matchesPrice(product.price, value));
           }
 
           if (sectionId === "discount") {
