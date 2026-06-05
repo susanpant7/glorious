@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import type { Product } from "@/lib/products";
+import { formatPrice } from "@/lib/formatPrice";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
