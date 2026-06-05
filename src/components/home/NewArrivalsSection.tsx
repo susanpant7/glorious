@@ -65,7 +65,7 @@ export function NewArrivalsSection() {
 
         <div className={`transition-all duration-500 ease-out ${isTransitioning ? "opacity-40 scale-95" : "opacity-100 scale-100"}`}>
           <p className="mb-6 text-sm text-slate-600">{buildSummary(selectedCategory, filteredProducts.length)}</p>
-          <ProductGrid products={filteredProducts} />
+          <ProductGrid products={filteredProducts} variant="home" />
         </div>
       </div>
     </section>

@@ -35,7 +35,9 @@ export function Breadcrumb() {
       <div className="mx-auto max-w-7xl px-6 py-3">
         <ol className="flex items-center gap-3 text-sm text-slate-600">
           <li>
-            <Link href="/" className="hover:underline">Home</Link>
+            <Link href="/" className="transition-colors duration-200 hover:text-amber-600 focus:text-amber-600">
+              Home
+            </Link>
           </li>
           {crumbs.map((c, i) => (
             <li key={c.href} className="flex items-center gap-3">
@@ -43,7 +45,7 @@ export function Breadcrumb() {
               {i === crumbs.length - 1 ? (
                 <span className="text-slate-800 font-medium">{c.label}</span>
               ) : (
-                <Link href={c.href} className="hover:underline text-slate-600">
+                <Link href={c.href} className="transition-colors duration-200 text-slate-600 hover:text-amber-600 focus:text-amber-600">
                   {c.label}
                 </Link>
               )}

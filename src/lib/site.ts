@@ -1,3 +1,9 @@
+export type NavLink = {
+  label: string;
+  href: string;
+  hiddenOnMobile?: boolean;
+};
+
 export const site = {
   name: "Glorious Health Care",
   shortName: "Glorious",
@@ -15,8 +21,9 @@ export const site = {
   navLinks: [
     { label: "Home", href: "/" },
     { label: "Products", href: "/products" },
-    { label: "Gallery", href: "/gallery", hiddenOnMobile: true },
-  ],
+    { label: "Events", href: "/events" },
+    { label: "Gallery", href: "/gallery" },
+  ] as NavLink[],
   hero: {
     badge: "New launch",
     title: "Beauty landing page with a scrolling product showcase.",

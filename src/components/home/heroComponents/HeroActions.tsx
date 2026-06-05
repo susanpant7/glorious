@@ -9,13 +9,6 @@ export function HeroActions() {
       <Button asChild>
         <Link href="/products">{site.heroActions.primary}</Link>
       </Button>
-      <Button
-        asChild
-        variant="outline"
-        className="border-white/30 text-white hover:bg-white/10 hover:text-white"
-      >
-        <a href="#featured">{site.heroActions.secondary}</a>
-      </Button>
     </div>
   );
 }
