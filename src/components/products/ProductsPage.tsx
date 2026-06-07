@@ -7,17 +7,17 @@ import { ActiveFiltersBar } from "@/components/products/ActiveFiltersBar";
 import { FilterSidebar } from "@/components/products/FilterSidebar";
 import { ProductGrid } from "@/components/products/ProductGrid";
 
-function matchesPrice(priceString: string, value: string) {
-  const price = Number(priceString.replace(/[^0-9]/g, ""));
+function matchesPrice(price: number | string, value: string) {
+  const numericPrice = Number(String(price).replace(/[^0-9]/g, ""));
   switch (value) {
     case "under-300":
-      return price < 300;
+      return numericPrice < 300;
     case "300-500":
-      return price >= 300 && price <= 500;
+      return numericPrice >= 300 && numericPrice <= 500;
     case "500-700":
-      return price > 500 && price <= 700;
+      return numericPrice > 500 && numericPrice <= 700;
     case "above-700":
-      return price > 700;
+      return numericPrice > 700;
     default:
       return true;
   }

@@ -24,8 +24,8 @@ export type Product = {
   category: string;
   type: string;
   color: string;
-  price: string;
-  oldPrice?: string;
+  price: number;
+  oldPrice?: number;
   badge?: string;
   discount?: number;
   description: string;
@@ -48,8 +48,8 @@ export const products: Product[] = [
     category: "Makeup",
     type: "Powder",
     color: "Amber",
-    price: "₹169",
-    oldPrice: "₹225",
+    price: 169,
+    oldPrice: 225,
     discount: 25,
     badge: "New",
     description:
@@ -128,8 +128,8 @@ export const products: Product[] = [
     category: "Makeup",
     type: "Lipstick",
     color: "Peach",
-    price: "₹594",
-    oldPrice: "₹699",
+    price: 594,
+    oldPrice: 699,
     discount: 15,
     badge: "New",
     description:
@@ -208,8 +208,8 @@ export const products: Product[] = [
     category: "Makeup",
     type: "Primer",
     color: "Nude",
-    price: "₹254",
-    oldPrice: "₹299",
+    price: 254,
+    oldPrice: 299,
     discount: 15,
     badge: "New",
     description: "Primer and foundation duo for a smooth, matte base.",
@@ -287,8 +287,8 @@ export const products: Product[] = [
     category: "Makeup",
     type: "Foundation",
     color: "Nude",
-    price: "₹719",
-    oldPrice: "₹899",
+    price: 719,
+    oldPrice: 899,
     discount: 20,
     badge: "New",
     description:
