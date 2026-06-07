@@ -84,6 +84,10 @@ export function describeFilterLabel(sectionId: string, product: Product) {
       return product.type;
     case "color":
       return product.color;
+    case "price":
+      return product.price;
+    case "discount":
+      return product.discount ? `${product.discount}%` : "";
     default:
       return "";
   }

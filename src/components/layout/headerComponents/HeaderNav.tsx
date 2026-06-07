@@ -27,7 +27,7 @@ export function HeaderNav() {
         <Link
           key={link.label}
           href={link.href}
-          className={link.hiddenOnMobile ? "hidden sm:inline-block" : undefined}
+          className={`${link.hiddenOnMobile ? "hidden sm:inline-block" : ""} transition-colors duration-200 text-slate-700 hover:text-amber-600 focus:text-amber-600`}
         >
           {link.label}
         </Link>

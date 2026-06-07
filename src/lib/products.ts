@@ -22,12 +22,12 @@ export type Product = {
   id: string;
   name: string;
   category: string;
-  type?: string;
-  color?: string;
+  type: string;
+  color: string;
   price: number;
-  discount?: number;
   oldPrice?: number;
   badge?: string;
+  discount?: number;
   description: string;
   details: string;
   shades: string;
@@ -46,8 +46,11 @@ export const products: Product[] = [
     id: "powder",
     name: "Lakmé Forever Matte Face Powder",
     category: "Makeup",
+    type: "Powder",
+    color: "Amber",
     price: 169,
     oldPrice: 225,
+    discount: 25,
     badge: "New",
     description:
       "Soft-focus powder for flawless coverage and lightweight comfort.",
@@ -123,8 +126,11 @@ export const products: Product[] = [
     id: "lipstick",
     name: "Lakmé 9to5 Hya Matte Lipstick",
     category: "Makeup",
+    type: "Lipstick",
+    color: "Peach",
     price: 594,
     oldPrice: 699,
+    discount: 15,
     badge: "New",
     description:
       "Longwear matte lipstick with hydration and rich colour payoff.",
@@ -200,8 +206,11 @@ export const products: Product[] = [
     id: "primer",
     name: "Lakmé 9 to 5 Primer + Matte Perfect Cover Foundation Mini",
     category: "Makeup",
+    type: "Primer",
+    color: "Nude",
     price: 254,
     oldPrice: 299,
+    discount: 15,
     badge: "New",
     description: "Primer and foundation duo for a smooth, matte base.",
     shades: "8 Shades Available",
@@ -276,8 +285,11 @@ export const products: Product[] = [
     id: "foundation",
     name: "Lakmé 9to5 Hya Matte Foundation + Hyaluronic Acid",
     category: "Makeup",
+    type: "Foundation",
+    color: "Nude",
     price: 719,
     oldPrice: 899,
+    discount: 20,
     badge: "New",
     description:
       "Hydrating matte foundation with oil control and SPF benefits.",

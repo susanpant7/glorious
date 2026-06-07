@@ -18,7 +18,7 @@ export function GallerySection({
   const visibleImages = images.slice(0, maxItems);
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white pt-16 pb-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 flex flex-col items-center gap-4 text-center">
           <p className="text-sm uppercase tracking-[0.32em] text-amber-600">Gallery</p>
