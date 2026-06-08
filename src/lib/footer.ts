@@ -1,6 +1,6 @@
 export const footerData = {
   company: {
-    name: "Glorious",
+    name: "glowrious",
     description: "Helping businesses build scalable digital solutions with modern technologies.",
     tagline: "Beauty meets technology",
   },
@@ -18,7 +18,7 @@ export const footerData = {
   ],
   contact: {
     address: "Kathmandu, Nepal",
-    email: "hello@glorious.com",
+    email: "hello@glowrious.com",
     phone: "+977-98XXXXXXXX",
   },
   socialLinks: [
@@ -34,5 +34,5 @@ export const footerData = {
     { label: "Cookie Policy", href: "#" },
     { label: "Disclaimer", href: "#" },
   ],
-  copyright: "© 2026 Glorious. All Rights Reserved.",
+  copyright: "© 2026 glowrious. All Rights Reserved.",
 };

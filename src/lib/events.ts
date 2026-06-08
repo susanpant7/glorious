@@ -38,11 +38,11 @@ export const events: Event[] = [
     summary: "Discover our newest botanical skincare line with live demos, expert talks, and exclusive launch offers.",
     description:
       "Join us for an immersive evening where beauty professionals and skincare lovers gather to experience new formulations, try product samples, and learn about clean, glowing skin routines from industry experts.",
-    organizer: "Glorious Health Care Events",
+    organizer: "glowrious Health Care Events",
     ticketPrice: "799",
     ticketsAvailable: "Limited seats available",
     registrationUrl: "https://example.com/events/skincare-launch",
-    contactEmail: "events@glorious.example",
+    contactEmail: "events@glowrious.example",
     contactPhone: "+91 98765 43211",
     tags: ["Skincare", "Launch", "Wellness"],
     schedule: [
@@ -74,11 +74,11 @@ export const events: Event[] = [
     summary: "Learn bridal makeup techniques from top artists and build a polished glow for ceremony-ready looks.",
     description:
       "This hands-on session covers bridal prep, base application, eye makeup, and longwear finishing for weddings and special occasions. Every attendee receives a personalized look guide and product kit.",
-    organizer: "Glorious Academy",
+    organizer: "glowrious Academy",
     ticketPrice: "1199",
     ticketsAvailable: "20 seats remaining",
     registrationUrl: "https://example.com/events/makeup-masterclass",
-    contactEmail: "academy@glorious.example",
+    contactEmail: "academy@glowrious.example",
     contactPhone: "+91 98765 43212",
     tags: ["Makeup", "Masterclass", "Bridal"],
     schedule: [
@@ -109,11 +109,11 @@ export const events: Event[] = [
     summary: "A live webinar focused on sensitive skin care, hydration, and daily wellness habits.",
     description:
       "Join dermatologists and beauty specialists for a guided conversation about skin health, ingredient science, and creating a stress-free skincare routine from home.",
-    organizer: "Glorious Wellness",
+    organizer: "glowrious Wellness",
     ticketPrice: "499",
     ticketsAvailable: "Unlimited online access",
     registrationUrl: "https://example.com/events/skin-health-webinar",
-    contactEmail: "wellness@glorious.example",
+    contactEmail: "wellness@glowrious.example",
     contactPhone: "+91 98765 43213",
     tags: ["Webinar", "Skin Care", "Virtual"],
     schedule: [
@@ -143,11 +143,11 @@ export const events: Event[] = [
     summary: "A three-day retreat combining mindfulness, skincare workshops, and nature-inspired rituals.",
     description:
       "Recharge with curated skin and body sessions, gentle yoga, spa rituals, and wellness conversations designed for a calm, glowing reset.",
-    organizer: "Glorious Retreats",
+    organizer: "glowrious Retreats",
     ticketPrice: "5999",
     ticketsAvailable: "Sold by invitation",
     registrationUrl: "https://example.com/events/wellness-weekend",
-    contactEmail: "retreats@glorious.example",
+    contactEmail: "retreats@glowrious.example",
     contactPhone: "+91 98765 43214",
     tags: ["Retreat", "Wellness", "Spa"],
     schedule: [
@@ -178,11 +178,11 @@ export const events: Event[] = [
     summary: "A social evening of colour, glow, and sample stations for the new season’s top looks.",
     description:
       "Explore seasonal shades, enjoy live demonstrations, and get personalized colour recommendations while mingling with beauty lovers in a creative studio setting.",
-    organizer: "Glorious Social",
+    organizer: "glowrious Social",
     ticketPrice: "299",
     ticketsAvailable: "40 seats available",
     registrationUrl: "https://example.com/events/summer-makeup-party",
-    contactEmail: "social@glorious.example",
+    contactEmail: "social@glowrious.example",
     contactPhone: "+91 98765 43215",
     tags: ["Makeup", "Summer", "Community"],
     schedule: [
@@ -213,11 +213,11 @@ export const events: Event[] = [
     summary: "Hear from founders, scientists, and trend experts about the future of beauty and sustainable skincare.",
     description:
       "A moderated panel exploring product innovation, ingredient transparency, and how beauty brands can build responsible, effective lines for modern consumers.",
-    organizer: "Glorious Insights",
+    organizer: "glowrious Insights",
     ticketPrice: "599",
     ticketsAvailable: "100 seats available",
     registrationUrl: "https://example.com/events/beauty-innovation-panel",
-    contactEmail: "insights@glorious.example",
+    contactEmail: "insights@glowrious.example",
     contactPhone: "+91 98765 43216",
     tags: ["Innovation", "Panel", "Sustainability"],
     schedule: [
@@ -247,11 +247,11 @@ export const events: Event[] = [
     summary: "Blend facial self-care with movement, breathwork, and hydration tips for a balanced beauty routine.",
     description:
       "This morning session combines guided facial exercises, light movement, and skincare coaching to help your skin look bright and refreshed from the inside out.",
-    organizer: "Glorious Wellness",
+    organizer: "glowrious Wellness",
     ticketPrice: "899",
     ticketsAvailable: "30 seats available",
     registrationUrl: "https://example.com/events/facecare-fitness-session",
-    contactEmail: "wellness@glorious.example",
+    contactEmail: "wellness@glowrious.example",
     contactPhone: "+91 98765 43217",
     tags: ["Wellness", "Face Care", "Fitness"],
     schedule: [
@@ -282,11 +282,11 @@ export const events: Event[] = [
     summary: "A curated sensory event featuring aroma-based skincare rituals, texture testing, and complementary refreshments.",
     description:
       "Enjoy a thoughtfully designed evening of scent, texture, and self-care. The sensory salon pairs product experiences with a relaxed atmosphere and expert storytelling.",
-    organizer: "Glorious Experiences",
+    organizer: "glowrious Experiences",
     ticketPrice: "699",
     ticketsAvailable: "50 seats available",
     registrationUrl: "https://example.com/events/sensory-salon-evening",
-    contactEmail: "experiences@glorious.example",
+    contactEmail: "experiences@glowrious.example",
     contactPhone: "+91 98765 43218",
     tags: ["Sensory", "Skincare", "Relaxation"],
     schedule: [
@@ -316,11 +316,11 @@ export const events: Event[] = [
     summary: "A haircare workshop exploring scalp health, nourishing styling, and product layering techniques.",
     description:
       "Learn expert haircare rituals for shine, strength, and scalp balance. The workshop includes product stations, styling demos, and home care recommendations.",
-    organizer: "Glorious Studio",
+    organizer: "glowrious Studio",
     ticketPrice: "999",
     ticketsAvailable: "35 seats available",
     registrationUrl: "https://example.com/events/hair-care-lounge",
-    contactEmail: "studio@glorious.example",
+    contactEmail: "studio@glowrious.example",
     contactPhone: "+91 98765 43219",
     tags: ["Hair Care", "Workshop", "Style"],
     schedule: [
@@ -351,11 +351,11 @@ export const events: Event[] = [
     summary: "Get ready for festive gatherings with glow-boosting skin prep, quick beauty hacks, and styling tips.",
     description:
       "This festive session is perfect for anyone looking for beauty inspiration, quick holiday routines, and confidence-boosting glam pathways ahead of seasonal celebrations.",
-    organizer: "Glorious Studio",
+    organizer: "glowrious Studio",
     ticketPrice: "649",
     ticketsAvailable: "90 seats available",
     registrationUrl: "https://example.com/events/holiday-glow-studio",
-    contactEmail: "studio@glorious.example",
+    contactEmail: "studio@glowrious.example",
     contactPhone: "+91 98765 43220",
     tags: ["Holiday", "Glow", "Beauty"],
     schedule: [
