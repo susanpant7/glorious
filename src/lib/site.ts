@@ -5,11 +5,11 @@ export type NavLink = {
 };
 
 export const site = {
-  name: "Glorious Health Care",
-  shortName: "Glorious",
+  name: "glowrious Health Care",
+  shortName: "glowrious",
   description: "Beauty & skincare essentials crafted with care.",
   contact: {
-    email: "support@glorious.example",
+    email: "support@glowrious.example",
     phone: "+91 98765 43210",
     address: "42 Bloom Street, Mumbai, Maharashtra, India",
     hours: {
@@ -42,9 +42,9 @@ export const site = {
     summaryTemplate: "Showing {count} products for {category}.",
   },
   about: {
-    title: "About Glorious Health Care",
+    title: "About glowrious Health Care",
     description:
-      "Founded with a passion for clean formulations and sustainable practices, Glorious Health Care combines scientific research with nourishing botanicals to create modern skincare and makeup essentials.",
+      "Founded with a passion for clean formulations and sustainable practices, glowrious Health Care combines scientific research with nourishing botanicals to create modern skincare and makeup essentials.",
     values: [
       "Quality ingredients",
       "Gentle, effective formulations",

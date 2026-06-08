@@ -4,6 +4,7 @@ import { getProductById, products } from "@/lib/products";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { SHOP_URL } from "@/lib/shop";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -31,7 +32,7 @@ export default async function ProductDetailPage({ params }: Props) {
   return (
     <div className="bg-slate-50 py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-amber-600">Product details</p>
             <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
@@ -41,9 +42,11 @@ export default async function ProductDetailPage({ params }: Props) {
               Discover the full product profile with ratings, pricing, and customer reviews for a confident purchase.
             </p>
           </div>
-          <Button asChild variant="outline" size="sm">
-            <Link href="/products">Back to products</Link>
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button asChild variant="outline" size="sm">
+              <Link href="/products">Back to products</Link>
+            </Button>
+          </div>
         </div>
 
         <div className="space-y-8">
@@ -66,10 +69,34 @@ export default async function ProductDetailPage({ params }: Props) {
             </Card>
 
             <Card className="border border-slate-200 shadow-sm">
-              <CardHeader className="space-y-3 px-8 pt-8 pb-0">
-                <CardTitle className="text-2xl">Product details</CardTitle>
-                <CardDescription>Click each section to expand for more information.</CardDescription>
-              </CardHeader>
+              <CardHeader className="flex items-start justify-between gap-4 px-8 pt-8 pb-0">
+                  <div>
+                    <CardTitle className="text-2xl">Product details</CardTitle>
+                    <CardDescription>Click each section to expand for more information.</CardDescription>
+                  </div>
+                  <div className="flex items-center">
+                    <Button
+                      asChild
+                      size="sm"
+                      className="bg-amber-500 text-white hover:bg-amber-600 transform transition duration-200 hover:-translate-y-1 active:translate-y-px shadow-md"
+                    >
+                      <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 mr-2"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={1.5}
+                          aria-hidden="true"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 6m12-6l2 6M9 19a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z" />
+                        </svg>
+                        Shop Now
+                      </a>
+                    </Button>
+                  </div>
+                </CardHeader>
               <CardContent className="px-8 pb-8">
                 <Table>
                   <TableHeader>
