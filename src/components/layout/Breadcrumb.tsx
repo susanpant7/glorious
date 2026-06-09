@@ -31,7 +31,7 @@ export function Breadcrumb() {
   });
 
   return (
-    <nav aria-label="Breadcrumb" className="bg-transparent">
+    <nav aria-label="Breadcrumb" className="bg-slate-50">
       <div className="mx-auto max-w-7xl px-6 py-3">
         <ol className="flex items-center gap-3 text-sm text-slate-600">
           <li>
