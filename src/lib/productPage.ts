@@ -27,8 +27,7 @@ export const productFilterSections: FilterSection[] = [
     id: "category",
     title: "Categories",
     options: [
-      { label: "Makeup", value: "Makeup" },
-      { label: "Skincare", value: "Skincare" },
+      { label: "SkinCare", value: "SkinCare" },
       { label: "Haircare", value: "Haircare" },
     ],
   },
@@ -36,42 +35,13 @@ export const productFilterSections: FilterSection[] = [
     id: "type",
     title: "Product Type",
     options: [
-      { label: "Powder", value: "Powder" },
-      { label: "Lipstick", value: "Lipstick" },
+      { label: "Face wash", value: "Face wash" },
+      { label: "Moisturizer", value: "Moisturizer" },
+      { label: "Sun Cream", value: "Sun Cream" },
+      { label: "Shampoo", value: "Shampoo" },
       { label: "Serum", value: "Serum" },
-      { label: "Foundation", value: "Foundation" },
-      { label: "Primer", value: "Primer" },
-      { label: "Mask", value: "Mask" },
-    ],
-  },
-  {
-    id: "color",
-    title: "Colors",
-    options: [
-      { label: "Ivory", value: "Ivory" },
-      { label: "Nude", value: "Nude" },
-      { label: "Peach", value: "Peach" },
-      { label: "Pink", value: "Pink" },
-      { label: "Amber", value: "Amber" },
-    ],
-  },
-  {
-    id: "price",
-    title: "Price",
-    options: [
-      { label: "Under ₹300", value: "under-300" },
-      { label: "₹300 - ₹500", value: "300-500" },
-      { label: "₹500 - ₹700", value: "500-700" },
-      { label: "Above ₹700", value: "above-700" },
-    ],
-  },
-  {
-    id: "discount",
-    title: "Discount",
-    options: [
-      { label: "10% or more", value: "10" },
-      { label: "20% or more", value: "20" },
-      { label: "30% or more", value: "30" },
+      { label: "Cream", value: "Cream" },
+      { label: "Cleanser", value: "Cleanser" },
     ],
   },
 ];
@@ -82,13 +52,7 @@ export function describeFilterLabel(sectionId: string, product: Product) {
       return product.category;
     case "type":
       return product.type;
-    case "color":
-      return product.color;
-    case "price":
-      return product.price;
-    case "discount":
-      return product.discount ? `${product.discount}%` : "";
     default:
-      return "";
+      return String(product[sectionId as keyof typeof product] ?? "");
   }
 }

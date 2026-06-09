@@ -22,11 +22,9 @@ export const footerData = {
     phone: "+977-98XXXXXXXX",
   },
   socialLinks: [
-    { icon: "linkedin", label: "LinkedIn", href: "#" },
-    { icon: "facebook", label: "Facebook", href: "#" },
-    { icon: "instagram", label: "Instagram", href: "#" },
-    { icon: "twitter", label: "Twitter", href: "#" },
-    { icon: "github", label: "GitHub", href: "#" },
+    { icon: "facebook", label: "Facebook", href: "https://www.facebook.com/glowrious.nepal" },
+    { icon: "instagram", label: "Instagram", href: "https://www.instagram.com/glowrious______" },
+    { icon: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@glowrious_nepal" },
   ],
   legalLinks: [
     { label: "Privacy Policy", href: "#" },

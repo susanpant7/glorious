@@ -8,7 +8,6 @@ import { SHOP_URL } from "@/lib/shop";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { formatPrice } from "@/lib/formatPrice";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -39,7 +38,10 @@ export default async function ProductDetailPage({ params }: Props) {
               {product.name}
             </h1>
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-              Discover the full product profile with ratings, pricing, and customer reviews for a confident purchase.
+              Discover the product profile with ingredients, benefits, and customer reviews for a confident choice.
+            </p>
+            <p className="mt-4 max-w-3xl whitespace-pre-line text-base leading-7 text-slate-700">
+              {product.details}
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -131,7 +133,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         {section.title}
                       </AccordionTrigger>
                       <AccordionContent className="px-5 pb-4 text-sm leading-7 text-slate-700">
-                        {section.content}
+                        <div className="whitespace-pre-line">{section.content}</div>
                       </AccordionContent>
                     </AccordionItem>
                   ))}
@@ -146,13 +148,6 @@ export default async function ProductDetailPage({ params }: Props) {
               </CardHeader>
               <CardContent className="space-y-4 px-8 pb-8">
                 <div className="grid gap-4">
-                  <div className="rounded-3xl bg-slate-50 p-5">
-                    <p className="text-sm text-slate-500">Price</p>
-                    <div className="mt-2 flex items-center gap-3">
-                      <span className="text-3xl font-semibold text-slate-950">{formatPrice(product.price)}</span>
-                      {product.oldPrice ? <span className="text-sm text-slate-400 line-through">{formatPrice(product.oldPrice)}</span> : null}
-                    </div>
-                  </div>
                   <div className="rounded-3xl bg-slate-50 p-5">
                     <p className="text-sm text-slate-500">Shades</p>
                     <p className="mt-2 font-semibold text-slate-950">{product.shades}</p>
@@ -221,7 +216,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         {item.category}
                       </Badge>
                       <p className="font-semibold text-slate-950">{item.name}</p>
-                      <p className="text-sm text-slate-600">{formatPrice(item.price)}</p>
+                      <p className="text-sm text-slate-600">{item.type}</p>
                     </div>
                   </Link>
                 ))}

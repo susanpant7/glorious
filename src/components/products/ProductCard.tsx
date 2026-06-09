@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import type { Product } from "@/lib/products";
-import { formatPrice } from "@/lib/formatPrice";
 import { SHOP_URL } from "@/lib/shop";
 import React from "react";
 
@@ -61,18 +60,6 @@ export function ProductCard({ product }: { product: Product }) {
             <div className="rounded-[1.5rem] bg-slate-50 px-4 py-4 shadow-sm">
               <p className="text-[11px] uppercase tracking-[0.32em] text-slate-500">Shades</p>
               <p className="mt-2 font-semibold text-slate-950">{product.shades}</p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2">
-              <div className="rounded-[1.5rem] bg-slate-50 px-4 py-4 shadow-sm">
-                <p className="text-[11px] uppercase tracking-[0.32em] text-slate-500">Price</p>
-                <p className="mt-2 font-semibold text-slate-950">{formatPrice(product.price)}</p>
-              </div>
-              {product.oldPrice ? (
-                <div className="rounded-[1.5rem] bg-slate-50 px-4 py-4 shadow-sm">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-slate-500">MSRP</p>
-                  <p className="mt-2 text-sm text-slate-400 line-through">{formatPrice(product.oldPrice)}</p>
-                </div>
-              ) : null}
             </div>
           </div>
         </CardContent>
