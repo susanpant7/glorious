@@ -43,321 +43,506 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    id: "powder",
-    name: "Lakmé Forever Matte Face Powder",
-    category: "Makeup",
-    type: "Powder",
-    color: "Amber",
-    price: 169,
-    oldPrice: 225,
-    discount: 25,
-    badge: "New",
+    id: "face-wash",
+    name: "GlowRious Face Wash",
+    category: "SkinCare",
+    type: "Face wash",
+    color: "Clear",
+    price: 560,
     description:
-      "Soft-focus powder for flawless coverage and lightweight comfort.",
-    shades: "2 Shades Available",
-    tone: "Warm Glow",
-    colorClass: "bg-gradient-to-br from-amber-100 via-rose-100 to-slate-50",
+      "Powered by 2% Salicylic Acid and 2% Lactic Acid, GlowRious Face Wash gently cleanses, brightens, and supports clearer skin without stripping moisture.",
+    shades: "One formula",
+    tone: "All skin types",
+    colorClass: "bg-gradient-to-br from-cyan-100 via-slate-100 to-white",
     image:
-      "https://images.unsplash.com/photo-1556228724-4d7a1ef4ecb0?auto=format&fit=crop&w=900&q=80",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/c19efe22-b094-47dc-a464-e54499adadf5_xyph8a",
     specs: [
-      {
-        label: "Product dimension",
-        value: "3.6cm x 2.97cm x 10.25cm (l x b x h)",
-      },
-      { label: "Net quantity", value: "25g" },
-      { label: "Commodity", value: "Face" },
-      { label: "Manufacturer", value: "Aero Care Personal Products LLP" },
-      { label: "Country of origin", value: "India" },
-      { label: "Expiry date", value: "24 months from manufacturing" },
+      { label: "Net quantity", value: "100 ml" },
+      { label: "Commodity", value: "Face Cleanser" },
+      { label: "Manufacturer", value: "GlowRious Laboratories" },
+      { label: "Shelf life", value: "24 months from manufacturing" },
     ],
     sections: [
       {
         id: "ingredients",
         title: "Ingredients",
         content:
-          "Talc, mica, silica, zinc stearate, vitamin E, colorants, and botanical extracts for a silky, skin-friendly finish.",
+          "Aqua (Water), Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Coco Glucoside, Glycerin, Propylene Glycol, Lactic Acid, Salicylic Acid, Cellulose Beads, Glycyrrhiza Glabra (Licorice) Extract, Acmella Oleracea Extract, Curcuma Sativus (Turmeric) Extract, Rubia Cordifolia Extract, Punarnava (Boerhavia Diffusa) Extract, Sodium Hydroxide, Phenoxethanol.",
       },
       {
-        id: "how-to-use",
-        title: "How to use",
+        id: "key-ingredients",
+        title: "Key Active Ingredients",
         content:
-          "Apply with a soft brush over foundation or bare skin. Blend in circular motions for even coverage and touch up during the day as needed.",
+          "2% Salicylic Acid helps unclog pores and reduce acne; 2% Lactic Acid gently exfoliates dead skin cells and improves texture. Botanical extracts like Licorice, Turmeric, Indian Madder, Punarnava, and Acmella soothe, brighten, and condition skin.",
       },
       {
         id: "benefits",
         title: "Benefits",
         content:
-          "Soft-focus effect, oil control, lightweight feel, and long-lasting natural coverage for all-day wear.",
+          "Removes excess oil, unclogs pores, brightens dull skin, and supports smoother, healthier-looking skin without stripping natural moisture.",
       },
       {
-        id: "safety",
-        title: "Safety information",
+        id: "how-to-use",
+        title: "How to use",
         content:
-          "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs.",
+          "Wet face, massage a small amount over wet skin in circular motions, then rinse thoroughly. Use daily morning and evening for best results.",
       },
     ],
     rating: 4.8,
     details:
-      "A luxurious pressed powder formulated for smooth coverage, shine control, and long-lasting comfort. The ultra-fine texture blends evenly for a soft-focus finish.",
+      "GlowRious Face Wash combines acne-fighting 2% Salicylic Acid and 2% Lactic Acid with botanical extracts such as Licorice, Turmeric, Rubia Cordifolia, Punarnava, and Acmella Oleracea. Its gentle sulfate-free base removes excess oil, unclogs pores, and helps promote clearer, smoother, and healthier-looking skin without stripping moisture.",
     reviews: [
       {
-        id: "powder-review-1",
-        author: "Aisha R.",
+        id: "face-wash-review-1",
+        author: "Aanya S.",
+        rating: 5,
+        date: "June 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+        content:
+          "My skin feels fresh and clean without tightness. It has helped reduce breakouts and keeps my face comfortably hydrated.",
+      },
+      {
+        id: "face-wash-review-2",
+        author: "Rohini P.",
+        rating: 4,
+        date: "May 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+        content:
+          "Great cleanser for oily skin. It brightens and controls shine while leaving the skin soft.",
+      },
+    ],
+  },
+  {
+    id: "moisturizer",
+    name: "Glowrious Moisturizer",
+    category: "SkinCare",
+    type: "Moisturizer",
+    color: "Hydrating",
+    price: 920,
+    description:
+      "A deep-hydration moisturizer formulated with Purasal® Moistxs, Phytosqualene, Niacinamide and Propylene Glycol to strengthen skin barrier and improve texture.",
+    shades: "One formula",
+    tone: "All skin types",
+    colorClass: "bg-gradient-to-br from-emerald-100 via-slate-100 to-white",
+    image:
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.27_2_ozldwp",
+    specs: [
+      { label: "Net quantity", value: "50 ml" },
+      { label: "Commodity", value: "Moisturizer" },
+      { label: "Manufacturer", value: "GlowRious Laboratories" },
+      { label: "Shelf life", value: "24 months from manufacturing" },
+    ],
+    sections: [
+      {
+        id: "ingredients",
+        title: "Ingredients",
+        content:
+          "Aqua (Water), Propylene Glycol, Glycerin, Urea, Sodium Acrylates Copolymer, Lecithin, Caprylic/Capric Triglyceride, Niacinamide, Phytosqualene, Purasal® Moistxs Complex, Lactic Acid, Sodium Gluconate, Sodium Hyaluronate, Phytosqualene, Phenoxyethanol, Copper Peptide, Dimethicone, Cucumis Sativus (Cucumber) Fruit Extract, Citrullus Lanatus (Watermelon) Fruit Extract, Carica Papaya (Papaya) Fruit Extract, Perfume, Color (CI 42051).",
+      },
+      {
+        id: "key-ingredients",
+        title: "Key Ingredients",
+        content:
+          "Purasal® Moistxs 2% delivers long-lasting hydration and softening. Phytosqualene 1% locks in moisture without greasiness. Niacinamide 1% improves texture and supports an even tone. 4% Propylene Glycol attracts and retains moisture while enhancing absorption.",
+      },
+      {
+        id: "benefits",
+        title: "Benefits",
+        content:
+          "Provides deep hydration, strengthens the skin barrier, smooths texture, and keeps skin soft, healthy, and radiant all day long.",
+      },
+      {
+        id: "how-to-use",
+        title: "How to use",
+        content:
+          "Apply to cleansed skin morning and evening. Massage gently until fully absorbed and follow with sunscreen during daytime use.",
+      },
+    ],
+    rating: 4.7,
+    details:
+      "Glowrious Moisturiser is formulated with Purasal® Moistxs 2%, Phytosqualene 1%, Niacinamide 1%, and 4% Propylene Glycol to deliver deep hydration, strengthen the skin barrier, and improve overall skin texture. Enriched with botanical extracts, it helps keep skin soft, smooth, healthy, and radiant all day long.",
+    reviews: [
+      {
+        id: "moisturizer-review-1",
+        author: "Simran K.",
         rating: 5,
         date: "May 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+        content:
+          "This moisturizer keeps my skin hydrated all day. It feels lightweight and absorbs quickly without stickiness.",
+      },
+      {
+        id: "moisturizer-review-2",
+        author: "Neha L.",
+        rating: 4,
+        date: "April 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+        content:
+          "Nice texture and soothing finish. My skin looks brighter and feels smoother after using it.",
+      },
+    ],
+  },
+  {
+    id: "sun-block",
+    name: "GlowRious Sun Block SPF 50 PA+++",
+    category: "SkinCare",
+    type: "Sun Cream",
+    color: "Light",
+    price: 1280,
+    description:
+      "Broad-spectrum SPF 50 PA+++ protection with SunshieldEX™ Technology, Niacinamide and Aloe Vera for a lightweight, non-greasy finish.",
+    shades: "One formula",
+    tone: "All skin tones",
+    colorClass: "bg-gradient-to-br from-yellow-100 via-amber-100 to-slate-50",
+    image:
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.26_1_m3crsa",
+    specs: [
+      { label: "Net quantity", value: "60 ml" },
+      { label: "Commodity", value: "Sun Care" },
+      { label: "Manufacturer", value: "GlowRious Laboratories" },
+      { label: "Shelf life", value: "24 months from manufacturing" },
+    ],
+    sections: [
+      {
+        id: "ingredients",
+        title: "Ingredients",
+        content:
+          "Aqua (Water), Propylene Glycol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Glycerin, Cyclopentasiloxane, Ethylhexyl Methoxycinnamate, Butyl Methoxydibenzoylmethane, Benzophenone-3, Phenylbenzimidazole Sulfonic Acid, Ethylhexyl Triazone, Niacinamide, Panthenol, Sodium Hyaluronate, Aloe Barbadensis Leaf Juice, Tocopheryl Acetate, Camellia Sinensis Leaf Extract, Glycyrrhiza Glabra Root Extract, Daucus Carota Sativa Root Extract, Centella Asiatica Extract, Dimethicone, Phenoxyethanol, Ethylhexylglycerin, Fragrance.",
+      },
+      {
+        id: "key-ingredients",
+        title: "Key Ingredients",
+        content:
+          "SunshieldEX™ Technology gives broad-spectrum defense against UVA, UVB, and blue light. Niacinamide supports even tone. Sodium Hyaluronate hydrates. Panthenol soothes and Aloe Vera cools.",
+      },
+      {
+        id: "benefits",
+        title: "Benefits",
+        content:
+          "Helps protect skin from sun damage while hydrating and nourishing with a lightweight, non-greasy finish suitable for everyday use.",
+      },
+      {
+        id: "how-to-use",
+        title: "How to use",
+        content:
+          "Apply liberally to face and neck 15 minutes before sun exposure. Reapply every two hours or after sweating or towel drying.",
+      },
+    ],
+    rating: 4.9,
+    details:
+      "GlowRious Sun Block SPF 50 PA+++ combines advanced SunshieldEX™ Technology with broad-spectrum UV filters, Niacinamide, Sodium Hyaluronate, Panthenol, Aloe Vera, and antioxidant botanical extracts to defend, hydrate, and nourish skin with a lightweight finish.",
+    reviews: [
+      {
+        id: "sun-block-review-1",
+        author: "Isha M.",
+        rating: 5,
+        date: "June 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+        content:
+          "Feels light and doesn't leave a white cast. It keeps my skin protected all day without feeling greasy.",
+      },
+      {
+        id: "sun-block-review-2",
+        author: "Karishma D.",
+        rating: 4,
+        date: "May 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+        content:
+          "Great SPF for daily use. It blends easily and sits well under makeup.",
+      },
+    ],
+  },
+  {
+    id: "shampoo",
+    name: "GlowRious Anti-Hair Fall Shampoo",
+    category: "Haircare",
+    type: "Shampoo",
+    color: "Nourishing",
+    price: 920,
+    description:
+      "A strengthening anti-hair fall shampoo formulated with Argan Oil, Whey Protein, Pea Protein and Cressatine® for stronger, healthier-looking hair.",
+    shades: "One formula",
+    tone: "All hair types",
+    colorClass: "bg-gradient-to-br from-violet-100 via-slate-100 to-white",
+    image:
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.26_2_xvpuub",
+    specs: [
+      { label: "Net quantity", value: "200 ml" },
+      { label: "Commodity", value: "Hair Care" },
+      { label: "Manufacturer", value: "GlowRious Laboratories" },
+      { label: "Shelf life", value: "24 months from manufacturing" },
+    ],
+    sections: [
+      {
+        id: "ingredients",
+        title: "Ingredients",
+        content:
+          "Aqua, Sodium Lauryl Sulphate, Ethylene Glycol Stearate, Coco Diethanolamide, Coco Betaine, Sorbitol, Argan Oil, Whey Protein, Pea Protein, Cressatine® (Nasturtium Officinale Extract & Tropaeolum Majus Extract), Vitamin E, Biotin, Rosemary Oil, Thuja Extract, Perfume, Sodium Chloride, Phenoxyethanol.",
+      },
+      {
+        id: "key-ingredients",
+        title: "Key Ingredients",
+        content:
+          "3% Argan Oil nourishes hair and improves elasticity; 2% Whey Protein strengthens strands; 2% Pea Protein helps repair damage; 2% Cressatine® supports healthier-looking hair and density.",
+      },
+      {
+        id: "benefits",
+        title: "Benefits",
+        content:
+          "Gently cleanses while reducing hair fall, strengthening fibers, improving scalp health, and leaving hair shinier and more manageable.",
+      },
+      {
+        id: "how-to-use",
+        title: "How to use",
+        content:
+          "Massage into wet scalp and hair, lather well, then rinse thoroughly. Use regularly for best results.",
+      },
+    ],
+    rating: 4.6,
+    details:
+      "Experience advanced hair care with GlowRious Anti-Hair Fall Shampoo, a nourishing formula with Argan Oil, Whey Protein, Pea Protein, and Cressatine® that helps reduce hair fall, strengthen hair fibers, improve scalp health, and promote thicker, healthier-looking hair.",
+    reviews: [
+      {
+        id: "shampoo-review-1",
+        author: "Tara S.",
+        rating: 5,
+        date: "June 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+        content:
+          "My hair feels stronger and less prone to breakage. It lathers well and leaves hair soft.",
+      },
+      {
+        id: "shampoo-review-2",
+        author: "Pooja R.",
+        avatar:
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80",
+        rating: 4,
+        date: "May 2026",
+        content:
+          "Good shampoo for hair fall control. The scent is pleasant and it rinses cleanly.",
+      },
+    ],
+  },
+  {
+    id: "vitamin-c-serum",
+    name: "GlowRious Skin Brightening 15% Vitamin C Face Serum",
+    category: "SkinCare",
+    type: "Serum",
+    color: "Radiant",
+    price: 1960,
+    description:
+      "A brightening serum with 15% Vitamin C, Hyaluronic Acid, and Alpha Arbutin to even skin tone and deliver a luminous glow.",
+    shades: "One formula",
+    tone: "All skin tones",
+    colorClass: "bg-gradient-to-br from-orange-100 via-slate-100 to-white",
+    image:
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.30_1_caftag",
+    specs: [
+      { label: "Net quantity", value: "30 ml" },
+      { label: "Commodity", value: "Serum" },
+      { label: "Manufacturer", value: "GlowRious Laboratories" },
+      { label: "Shelf life", value: "24 months from manufacturing" },
+    ],
+    sections: [
+      {
+        id: "ingredients",
+        title: "Ingredients",
+        content:
+          "Aqua, Vitamin C (3-O-Ethyl Ascorbic Acid), Propylene Glycol, Glycerine, Sodium Hyaluronate, D-Panthenol, Diethylene Glycol Monoethyl Ether, Alpha Arbutin, PEG-40 Hydrogenated Castor Oil, RonaCare® AP, Rosehip Oil, Retinol, Sodium Metabisulfite, DMDM Hydantoin.",
+      },
+      {
+        id: "key-ingredients",
+        title: "Key Ingredients",
+        content:
+          "15% Vitamin C brightens and improves radiance; Hyaluronic Acid hydrates and plumps; Alpha Arbutin targets uneven tone; D-Panthenol soothes and supports the skin barrier.",
+      },
+      {
+        id: "benefits",
+        title: "Benefits",
+        content:
+          "Helps brighten dull skin, reduce pigmentation, even skin tone, and provide deep hydration for smoother, more luminous skin.",
+      },
+      {
+        id: "how-to-use",
+        title: "How to use",
+        content:
+          "Apply evenly to cleansed face and neck each morning and evening before moisturizer. Use sunscreen during daytime.",
+      },
+    ],
+    rating: 4.8,
+    details:
+      "Reveal radiant, healthy-looking skin with GlowRious 15% Vitamin C Face Serum. This lightweight, fast-absorbing formula combines vitamin C, hyaluronic acid, and alpha arbutin to brighten, hydrate, and improve skin tone while defending against environmental stressors.",
+    reviews: [
+      {
+        id: "serum-review-1",
+        author: "Ankita V.",
+        rating: 5,
+        date: "June 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+        content:
+          "My skin looks brighter and feels hydrated. It absorbs quickly without stickiness.",
+      },
+      {
+        id: "serum-review-2",
+        author: "Sana Q.",
+        rating: 4,
+        date: "May 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+        content:
+          "This serum helped even out my skin tone and gave my complexion a nice glow.",
+      },
+    ],
+  },
+  {
+    id: "night-cream",
+    name: "GlowRious Retinol Night Cream",
+    category: "SkinCare",
+    type: "Cream",
+    color: "Repair",
+    price: 1520,
+    description:
+      "A restorative night cream with Retinol, Snail Mucin, Bakuchiol, and Hyaluronic Acid to renew skin while you sleep.",
+    shades: "One formula",
+    tone: "All skin types",
+    colorClass: "bg-gradient-to-br from-indigo-100 via-slate-100 to-white",
+    image:
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.29_1_lhz9fp",
+    specs: [
+      { label: "Net quantity", value: "50 ml" },
+      { label: "Commodity", value: "Night Cream" },
+      { label: "Manufacturer", value: "GlowRious Laboratories" },
+      { label: "Shelf life", value: "24 months from manufacturing" },
+    ],
+    sections: [
+      {
+        id: "ingredients",
+        title: "Ingredients",
+        content:
+          "Aqua, Propylene Glycol, Glycerine, D-Panthenol, Polyacrylate and Lecithin, Bakuchiol Water, Snail Mucin Secretion Filtrate, Sodium Hyaluronate, Cucumber Extract, Oatmeal Extract, Vitamin C, Allantoin, Squalane, Argan Oil, Clary Sage Oil, Chamomile Oil, Phyto Squalene, Retinol, Perfume, Phenoxyethanol.",
+      },
+      {
+        id: "key-ingredients",
+        title: "Key Ingredients",
+        content:
+          "Retinol supports skin renewal and reduces fine lines. Snail Mucin hydrates and repairs. Bakuchiol Water helps firmness. Hyaluronic Acid keeps skin plump and supple.",
+      },
+      {
+        id: "benefits",
+        title: "Benefits",
+        content:
+          "Helps restore skin overnight, improve texture, hydrate deeply, and leave skin feeling refreshed and youthful by morning.",
+      },
+      {
+        id: "how-to-use",
+        title: "How to use",
+        content:
+          "Apply a thin layer to cleansed skin in the evening. Follow with moisturizer if needed and avoid direct sun exposure during daytime.",
+      },
+    ],
+    rating: 4.7,
+    details:
+      "Wake up to smoother, firmer, healthier-looking skin with GlowRious Retinol Night Cream. Its rich yet lightweight formula deeply nourishes and supports visible skin renewal while you sleep.",
+    reviews: [
+      {
+        id: "night-cream-review-1",
+        author: "Kavita N.",
+        rating: 5,
+        date: "June 2026",
         avatar:
           "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80",
         content:
-          "Perfect for a natural finish. The powder blends beautifully and lasts all day without feeling heavy.",
+          "My skin feels softer and looks more refreshed every morning. It’s a lovely night cream.",
       },
       {
-        id: "powder-review-2",
-        author: "Sneha K.",
-        avatar:
-          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80",
+        id: "night-cream-review-2",
+        author: "Megha T.",
         rating: 4,
-        date: "April 2026",
+        date: "May 2026",
+        avatar:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
         content:
-          "Amazing coverage and keeps shine away. I love how light it feels on my skin.",
+          "Nice texture and easy to layer. My skin seems less dry and more even.",
       },
     ],
   },
   {
-    id: "lipstick",
-    name: "Lakmé 9to5 Hya Matte Lipstick",
-    category: "Makeup",
-    type: "Lipstick",
-    color: "Peach",
-    price: 594,
-    oldPrice: 699,
-    discount: 15,
-    badge: "New",
+    id: "skin-cleanser",
+    name: "GlowRious Gentle Skin Cleanser",
+    category: "SkinCare",
+    type: "Cleanser",
+    color: "Gentle",
+    price: 1400,
     description:
-      "Longwear matte lipstick with hydration and rich colour payoff.",
-    shades: "24 Shades Available",
-    tone: "Peach Nude",
-    colorClass: "bg-gradient-to-br from-rose-100 via-orange-100 to-slate-50",
+      "A mild, hydrating daily cleanser enriched with Niacinamide, Panthenol, and Allantoin to gently remove impurities while preserving moisture.",
+    shades: "One formula",
+    tone: "Sensitive skin friendly",
+    colorClass: "bg-gradient-to-br from-pink-100 via-slate-100 to-white",
     image:
-      "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=900&q=80",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.22_1_eorpqh",
     specs: [
-      {
-        label: "Product dimension",
-        value: "1.2cm x 1.2cm x 8.7cm (l x b x h)",
-      },
-      { label: "Net quantity", value: "3.6g" },
-      { label: "Commodity", value: "Lips" },
-      { label: "Manufacturer", value: "Aero Care Personal Products LLP" },
-      { label: "Country of origin", value: "India" },
-      { label: "Expiry date", value: "24 months from manufacturing" },
+      { label: "Net quantity", value: "150 ml" },
+      { label: "Commodity", value: "Face Cleanser" },
+      { label: "Manufacturer", value: "GlowRious Laboratories" },
+      { label: "Shelf life", value: "24 months from manufacturing" },
     ],
     sections: [
       {
         id: "ingredients",
         title: "Ingredients",
         content:
-          "Hydrogenated castor oil, mineral oil, hyaluronic acid, antioxidants, and lightweight pigments for lasting color.",
+          "Aqua (Water), Glycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Niacinamide, Panthenol, Allantoin, Sodium PCA, Disodium EDTA, Phenoxyethanol, Citric Acid, Perfume.",
       },
       {
-        id: "how-to-use",
-        title: "How to use",
+        id: "key-ingredients",
+        title: "Key Ingredients",
         content:
-          "Apply directly to lips from the bullet or use a brush for precise coverage. Reapply as needed after eating or drinking.",
+          "Niacinamide brightens and strengthens the moisture barrier. Panthenol soothes and supports repair. Allantoin calms and protects sensitive skin.",
       },
       {
         id: "benefits",
         title: "Benefits",
         content:
-          "Hydrates lips while delivering rich matte color that stays comfortable and prevents dryness.",
+          "Gently removes impurities, maintains the skin’s natural moisture barrier, and leaves skin soft, fresh, and comfortable.",
       },
       {
-        id: "safety",
-        title: "Safety information",
+        id: "how-to-use",
+        title: "How to use",
         content:
-          "For external use only. Keep away from eyes. Stop use if irritation occurs.",
+          "Apply to damp skin, massage into a creamy lather, then rinse. Use daily morning and evening for gentle cleansing.",
       },
     ],
+    rating: 4.6,
     details:
-      "A longwear matte formula enriched with hyaluronic acid to keep lips soft, plump, and richly pigmented throughout the day.",
-    rating: 4.7,
+      "GlowRious Gentle Skin Cleanser is a mild, hydrating daily face wash enriched with Niacinamide, Panthenol, and Allantoin. It gently removes impurities while preserving the skin’s natural moisture barrier for soft, comfortable skin.",
     reviews: [
       {
-        id: "lipstick-review-1",
-        author: "Geeta M.",
+        id: "cleanser-review-1",
+        author: "Nivedita H.",
         rating: 5,
         date: "June 2026",
         avatar:
-          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
         content:
-          "The colour is vibrant and comfortable. It lasted through lunch without drying out my lips.",
+          "My skin feels calm and hydrated after using this cleanser. It doesn’t strip or dry out my face.",
       },
       {
-        id: "lipstick-review-2",
-        author: "Priya S.",
+        id: "cleanser-review-2",
+        author: "Ritu M.",
+        rating: 4,
+        date: "May 2026",
         avatar:
           "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
-        rating: 4,
-        date: "May 2026",
         content:
-          "Great matte finish with a moisturizing feel. The peach nude is my new go-to shade.",
-      },
-    ],
-  },
-  {
-    id: "primer",
-    name: "Lakmé 9 to 5 Primer + Matte Perfect Cover Foundation Mini",
-    category: "Makeup",
-    type: "Primer",
-    color: "Nude",
-    price: 254,
-    oldPrice: 299,
-    discount: 15,
-    badge: "New",
-    description: "Primer and foundation duo for a smooth, matte base.",
-    shades: "8 Shades Available",
-    tone: "Soft Beige",
-    colorClass: "bg-gradient-to-br from-slate-100 via-slate-200 to-white",
-    image:
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80",
-    specs: [
-      {
-        label: "Product dimension",
-        value: "2.4cm x 2.4cm x 11.5cm (l x b x h)",
-      },
-      { label: "Net quantity", value: "30ml" },
-      { label: "Commodity", value: "Face" },
-      { label: "Manufacturer", value: "Aero Care Personal Products LLP" },
-      { label: "Country of origin", value: "India" },
-      { label: "Expiry date", value: "24 months from manufacturing" },
-    ],
-    sections: [
-      {
-        id: "ingredients",
-        title: "Ingredients",
-        content:
-          "Cyclopentasiloxane, glycerin, silica, dimethicone, and microfine pigments for a smooth matte base.",
-      },
-      {
-        id: "how-to-use",
-        title: "How to use",
-        content:
-          "Apply before foundation or mix with foundation. Blend evenly to blur pores and create a long-lasting matte finish.",
-      },
-      {
-        id: "benefits",
-        title: "Benefits",
-        content:
-          "Smooths skin texture, controls oil, and improves makeup adhesion without heaviness.",
-      },
-      {
-        id: "safety",
-        title: "Safety information",
-        content:
-          "For external use only. Avoid broken skin and discontinue if irritation occurs.",
-      },
-    ],
-    details:
-      "A lightweight primer and mini foundation set that smooths pores, controls shine, and creates a polished matte base for all-day wear.",
-    rating: 4.6,
-    reviews: [
-      {
-        id: "primer-review-1",
-        author: "Nisha P.",
-        rating: 5,
-        date: "April 2026",
-        avatar:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-        content:
-          "The primer keeps makeup in place and controls shine nicely. The foundation mini is perfect for travel.",
-      },
-      {
-        id: "primer-review-2",
-        author: "Anjali R.",
-        avatar:
-          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80",
-        rating: 4,
-        date: "March 2026",
-        content:
-          "Lightweight coverage that feels natural. I appreciate how it doesn’t cake even after hours.",
-      },
-    ],
-  },
-  {
-    id: "foundation",
-    name: "Lakmé 9to5 Hya Matte Foundation + Hyaluronic Acid",
-    category: "Makeup",
-    type: "Foundation",
-    color: "Nude",
-    price: 719,
-    oldPrice: 899,
-    discount: 20,
-    badge: "New",
-    description:
-      "Hydrating matte foundation with oil control and SPF benefits.",
-    shades: "20 Shades Available",
-    tone: "Neutral Beige",
-    colorClass: "bg-gradient-to-br from-slate-100 via-amber-100 to-slate-50",
-    image:
-      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80",
-    specs: [
-      {
-        label: "Product dimension",
-        value: "2.8cm x 2.8cm x 13.5cm (l x b x h)",
-      },
-      { label: "Net quantity", value: "30ml" },
-      { label: "Commodity", value: "Face" },
-      { label: "Manufacturer", value: "Aero Care Personal Products LLP" },
-      { label: "Country of origin", value: "India" },
-      { label: "Expiry date", value: "24 months from manufacturing" },
-    ],
-    sections: [
-      {
-        id: "ingredients",
-        title: "Ingredients",
-        content:
-          "Water, glycerin, hyaluronic acid, kaolin, mica, and SPF boosters for hydration and matte coverage.",
-      },
-      {
-        id: "how-to-use",
-        title: "How to use",
-        content:
-          "Shake gently, apply to clean skin with fingers or brush, blend outward for smooth, long-lasting coverage.",
-      },
-      {
-        id: "benefits",
-        title: "Benefits",
-        content:
-          "Hydrates skin while delivering a matte finish with SPF protection and a lightweight feel.",
-      },
-      {
-        id: "safety",
-        title: "Safety information",
-        content:
-          "For external use only. Avoid direct eye contact and store at room temperature.",
-      },
-    ],
-    details:
-      "A hydrating matte foundation rich in hyaluronic acid, designed to deliver an even, luminous finish without feeling heavy.",
-    rating: 4.9,
-    reviews: [
-      {
-        id: "foundation-review-1",
-        author: "Riya T.",
-        rating: 5,
-        date: "June 2026",
-        avatar:
-          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80",
-        content:
-          "My skin looks flawless and hydrated all day. The SPF is an excellent bonus.",
-      },
-      {
-        id: "foundation-review-2",
-        author: "Meera S.",
-        avatar:
-          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
-        rating: 4,
-        date: "May 2026",
-        content:
-          "Beautiful finish and long wear. It blends easily and doesn't feel heavy.",
+          "A very gentle daily cleanser with a soothing finish. Ideal for sensitive skin.",
       },
     ],
   },

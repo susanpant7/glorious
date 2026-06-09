@@ -13,6 +13,8 @@ export function FooterSocial() {
             <a
               key={social.label}
               href={social.href}
+              target="_blank"
+              rel="noreferrer noopener"
               aria-label={social.label}
               className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-amber-400 hover:text-amber-400"
             >
