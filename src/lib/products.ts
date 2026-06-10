@@ -44,7 +44,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: "face-wash",
-    name: "GlowRious Face Wash",
+    name: "Face Wash",
     category: "SkinCare",
     type: "Face wash",
     color: "Clear",
@@ -55,7 +55,7 @@ export const products: Product[] = [
     tone: "All skin types",
     colorClass: "bg-gradient-to-br from-cyan-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/c19efe22-b094-47dc-a464-e54499adadf5_xyph8a",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102619/GlowRious_Face_wash_e2dnwu.png",
     specs: [
       { label: "Net quantity", value: "100 ml" },
       { label: "Commodity", value: "Face Cleanser" },
@@ -116,7 +116,7 @@ export const products: Product[] = [
   },
   {
     id: "moisturizer",
-    name: "Glowrious Moisturizer",
+    name: "Moisturizer",
     category: "SkinCare",
     type: "Moisturizer",
     color: "Hydrating",
@@ -127,7 +127,7 @@ export const products: Product[] = [
     tone: "All skin types",
     colorClass: "bg-gradient-to-br from-emerald-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.27_2_ozldwp",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102798/GlowRious_Moisturiser_muq0y2.png",
     specs: [
       { label: "Net quantity", value: "50 ml" },
       { label: "Commodity", value: "Moisturizer" },
@@ -188,7 +188,7 @@ export const products: Product[] = [
   },
   {
     id: "sun-block",
-    name: "GlowRious Sun Block SPF 50 PA+++",
+    name: "Sun Block SPF 50 PA+++",
     category: "SkinCare",
     type: "Sun Cream",
     color: "Light",
@@ -199,7 +199,7 @@ export const products: Product[] = [
     tone: "All skin tones",
     colorClass: "bg-gradient-to-br from-yellow-100 via-amber-100 to-slate-50",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.26_1_m3crsa",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Sun_Block_50_yuavqa.png",
     specs: [
       { label: "Net quantity", value: "60 ml" },
       { label: "Commodity", value: "Sun Care" },
@@ -260,7 +260,7 @@ export const products: Product[] = [
   },
   {
     id: "shampoo",
-    name: "GlowRious Anti-Hair Fall Shampoo",
+    name: "Anti-Hair Fall Shampoo",
     category: "Haircare",
     type: "Shampoo",
     color: "Nourishing",
@@ -271,7 +271,7 @@ export const products: Product[] = [
     tone: "All hair types",
     colorClass: "bg-gradient-to-br from-violet-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.26_2_xvpuub",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Shampoo_ewvcx0.jpg",
     specs: [
       { label: "Net quantity", value: "200 ml" },
       { label: "Commodity", value: "Hair Care" },
@@ -332,7 +332,7 @@ export const products: Product[] = [
   },
   {
     id: "vitamin-c-serum",
-    name: "GlowRious Skin Brightening 15% Vitamin C Face Serum",
+    name: "Skin Brightening 15% Vitamin C Face Serum",
     category: "SkinCare",
     type: "Serum",
     color: "Radiant",
@@ -343,7 +343,7 @@ export const products: Product[] = [
     tone: "All skin tones",
     colorClass: "bg-gradient-to-br from-orange-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.30_1_caftag",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Vitamin_C_h5igyp.png",
     specs: [
       { label: "Net quantity", value: "30 ml" },
       { label: "Commodity", value: "Serum" },
@@ -404,7 +404,7 @@ export const products: Product[] = [
   },
   {
     id: "night-cream",
-    name: "GlowRious Retinol Night Cream",
+    name: "Retinol Night Cream",
     category: "SkinCare",
     type: "Cream",
     color: "Repair",
@@ -415,7 +415,7 @@ export const products: Product[] = [
     tone: "All skin types",
     colorClass: "bg-gradient-to-br from-indigo-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.29_1_lhz9fp",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102801/GlowRious_Night_Cream_ryqmny.jpg",
     specs: [
       { label: "Net quantity", value: "50 ml" },
       { label: "Commodity", value: "Night Cream" },
@@ -476,7 +476,7 @@ export const products: Product[] = [
   },
   {
     id: "skin-cleanser",
-    name: "GlowRious Gentle Skin Cleanser",
+    name: "Gentle Skin Cleanser",
     category: "SkinCare",
     type: "Cleanser",
     color: "Gentle",
@@ -487,7 +487,7 @@ export const products: Product[] = [
     tone: "Sensitive skin friendly",
     colorClass: "bg-gradient-to-br from-pink-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.22_1_eorpqh",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Cleanser_op8uzn.jpg",
     specs: [
       { label: "Net quantity", value: "150 ml" },
       { label: "Commodity", value: "Face Cleanser" },

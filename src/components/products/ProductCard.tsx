@@ -42,11 +42,12 @@ export function ProductCard({ product }: { product: Product }) {
             >
               Buy
             </a>
-            <p className="mt-4 text-3xl font-semibold text-white drop-shadow-lg">{product.name}</p>
           </div>
         </div>
 
         <CardContent className="space-y-5 px-6 pb-0 pt-6">
+          <h3 className="text-xl font-semibold text-slate-950">{product.name}</h3>
+
           <div className="flex items-start justify-between gap-3">
             <p className="text-sm leading-7 text-slate-600">{product.description}</p>
             {product.badge ? (
@@ -54,13 +55,6 @@ export function ProductCard({ product }: { product: Product }) {
                 {product.badge}
               </Badge>
             ) : null}
-          </div>
-
-          <div className="grid gap-3 text-sm">
-            <div className="rounded-[1.5rem] bg-slate-50 px-4 py-4 shadow-sm">
-              <p className="text-[11px] uppercase tracking-[0.32em] text-slate-500">Shades</p>
-              <p className="mt-2 font-semibold text-slate-950">{product.shades}</p>
-            </div>
           </div>
         </CardContent>
 

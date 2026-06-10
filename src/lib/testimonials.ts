@@ -9,7 +9,7 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     id: "lana",
-    name: "Lana Anderson",
+    name: "Sita Thapa Magar",
     profession: "Beauty Enthusiast",
     quote:
       "I love the smooth design and clean experience. This landing page feels premium, and the product cards are so inviting.",
@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "maya",
-    name: "Maya Chen",
+    name: "Bharat Limbu",
     profession: "Makeup Artist",
     quote:
       "The layout is beautiful and the transition from hero to products is effortless. It looks stylish and easy to navigate.",
@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "simone",
-    name: "Simone Black",
+    name: "Rita Adhikari",
     profession: "Skin Care Expert",
     quote:
       "My customers love the polished look. The testimonial section really adds trust and makes the page feel complete.",
