@@ -9,13 +9,11 @@ export const site = {
   shortName: "glowrious",
   description: "Beauty & skincare essentials crafted with care.",
   contact: {
-    email: "support@glowrious.example",
-    phone: "+91 98765 43210",
-    address: "42 Bloom Street, Mumbai, Maharashtra, India",
+    email: "glowrious.info@gmail.com",
+    phone: "+977-9704509812",
+    address: "Suncity Road, Kageshwori Manohara - 09, Kathmandu",
     hours: {
-      weekday: "Mon - Fri: 9:00 AM – 6:00 PM IST",
-      saturday: "Sat: 10:00 AM – 2:00 PM",
-      sunday: "Sun: Closed",
+      weekday: "Mon - Fri: 9:00 AM – 6:00 PM",
     },
   },
   navLinks: [
@@ -25,10 +23,10 @@ export const site = {
     { label: "Gallery", href: "/gallery" },
   ] as NavLink[],
   hero: {
-    badge: "New launch",
-    title: "Beauty landing page with a scrolling product showcase.",
+    badge: "GlowRious",
+    title: "Chasing your glow",
     description:
-      "Start with a full-width hero, keep the header fixed across pages, and show product listings as users scroll.",
+      "GlowRious is a premium dermatology-inspired skincare brand owned and marketed by Yuva Trade Concern, Nepal. Built around a single promise — Chasing your glow — the brand combines clinically respected actives with modern encapsulation science to deliver visible, comfortable results for everyday skin concerns.",
   },
   heroActions: {
     primary: "Shop products",

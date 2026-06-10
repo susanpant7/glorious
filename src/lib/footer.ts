@@ -7,30 +7,25 @@ export const footerData = {
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "Products", href: "/products" },
-    { label: "About Us", href: "#" },
-    { label: "Contact", href: "#" },
-  ],
-  services: [
-    { label: "Web Development", href: "#" },
-    { label: "Mobile Development", href: "#" },
-    { label: "UI/UX Design", href: "#" },
-    { label: "Cloud Solutions", href: "#" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ],
   contact: {
-    address: "Kathmandu, Nepal",
-    email: "hello@glowrious.com",
-    phone: "+977-98XXXXXXXX",
+    address: "Suncity Road,  Kageshwori Manohara - 09, Kathmandu",
+    email: "glowrious.info@gmail.com",
+    phone: "+977-9704509812",
   },
   socialLinks: [
-    { icon: "facebook", label: "Facebook", href: "https://www.facebook.com/glowrious.nepal" },
+    { icon: "facebook", label: "Facebook", href: "https://www.facebook.com/glowriousnpl" },
     { icon: "instagram", label: "Instagram", href: "https://www.instagram.com/glowrious______" },
     { icon: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@glowrious_nepal" },
   ],
   legalLinks: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms & Conditions", href: "#" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "Disclaimer", href: "#" },
+    { label: "Career", href: "#" },
+    { label: "Brand story", href: "#" },
+    { label: "Mission", href: "#" },
+    { label: "Vision", href: "#" },
+    { label: "FAQs", href: "#" }
   ],
   copyright: "© 2026 glowrious. All Rights Reserved.",
 };

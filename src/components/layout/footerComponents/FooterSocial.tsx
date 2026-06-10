@@ -6,7 +6,7 @@ export function FooterSocial() {
     <div className="flex flex-col gap-6">
       <div>
         <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-400">
-          Follow Us
+          Join our community
         </p>
         <div className="flex gap-4">
           {footerData.socialLinks.map((social) => (

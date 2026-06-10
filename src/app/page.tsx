@@ -7,16 +7,7 @@ import type { GalleryImage } from "@/lib/gallery";
 
 async function getCloudinaryImages(): Promise<GalleryImage[]> {
   try {
-    const response = await fetch("/api/gallery", {
-      cache: "no-store",
-    });
-
-    if (!response.ok) {
       return galleryImages;
-    }
-
-    const data = await response.json();
-    return data.images && data.images.length > 0 ? data.images : galleryImages;
   } catch (error) {
     return galleryImages;
   }

@@ -35,8 +35,6 @@ export default function ContactPage() {
             <div>
               <h3 className="text-lg font-semibold">Business hours</h3>
               <p className="mt-3 text-sm text-slate-700">{c.hours.weekday}</p>
-              <p className="mt-2 text-sm text-slate-700">{c.hours.saturday}</p>
-              <p className="mt-2 text-sm text-slate-700">{c.hours.sunday}</p>
             </div>
           </div>
 
