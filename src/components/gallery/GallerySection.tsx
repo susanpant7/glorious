@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { GalleryModal } from "@/components/gallery/GalleryModal";
 import type { GalleryImage } from "@/lib/gallery";
 
@@ -15,7 +14,13 @@ export function GallerySection({
   showViewMore?: boolean;
 }) {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-  const visibleImages = images.slice(0, maxItems);
+  const [visibleCount, setVisibleCount] = useState(maxItems);
+  const visibleImages = images.slice(0, visibleCount);
+  const hasMore = visibleCount < images.length;
+
+  const handleLoadMore = () => {
+    setVisibleCount((current) => Math.min(current + 8, images.length));
+  };
 
   return (
     <section className="bg-white pt-16 pb-12">
@@ -58,14 +63,15 @@ export function GallerySection({
           ))}
         </div>
 
-        {showViewMore ? (
+        {hasMore ? (
           <div className="mt-10 flex justify-center">
-            <Link
-              href="/gallery"
+            <button
+              type="button"
+              onClick={handleLoadMore}
               className="inline-flex rounded-full bg-slate-950 px-8 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
             >
-              View More
-            </Link>
+              Load more
+            </button>
           </div>
         ) : null}
       </div>

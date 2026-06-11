@@ -21,11 +21,11 @@ export const footerData = {
     { icon: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@glowrious_nepal" },
   ],
   legalLinks: [
-    { label: "Career", href: "#" },
-    { label: "Brand story", href: "#" },
-    { label: "Mission", href: "#" },
-    { label: "Vision", href: "#" },
-    { label: "FAQs", href: "#" }
+    { label: "Career", href: "/career" },
+    { label: "Brand story", href: "/brand-story" },
+    { label: "Mission", href: "/mission" },
+    { label: "Vision", href: "/vision" },
+    { label: "FAQs", href: "/faqs" }
   ],
   copyright: "© 2026 glowrious. All Rights Reserved.",
 };
