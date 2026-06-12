@@ -1,14 +1,18 @@
-import { footerData } from "@/lib/footer";
+import Image from "next/image";
 
 export function FooterBrand() {
   return (
-    <div>
-      <h2 className="text-3xl font-bold text-white">{footerData.company.name}</h2>
-      <p className="mt-2 max-w-md text-sm leading-6 text-slate-400">
-        {footerData.company.description}
-      </p>
-      <p className="mt-2 text-sm font-semibold uppercase tracking-[0.3em] text-amber-400">
-        {footerData.company.tagline}
+    <div className="flex flex-col items-start">
+      <Image
+        src="https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781273539/Logo_GlowRious_page-0001_gemjsg.png"
+        alt="glowrious"
+        width={280}
+        height={90}
+        className="h-24 w-auto object-contain sm:h-32"
+        priority
+      />
+      <p className="mt-3 text-sm font-semibold uppercase tracking-[0.28em] text-amber-400">
+        Chasing your glow
       </p>
     </div>
   );

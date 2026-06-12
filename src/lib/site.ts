@@ -21,6 +21,8 @@ export const site = {
     { label: "Products", href: "/products" },
     { label: "Events", href: "/events" },
     { label: "Gallery", href: "/gallery" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ] as NavLink[],
   hero: {
     badge: "GlowRious",

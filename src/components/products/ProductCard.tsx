@@ -31,18 +31,6 @@ export function ProductCard({ product }: { product: Product }) {
             alt={product.name}
             className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
-          <div className="absolute inset-x-0 bottom-0 px-6 pb-5">
-            <a
-              href={SHOP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="inline-flex rounded-full border border-white/25 bg-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.4em] text-white/90 backdrop-blur-sm"
-            >
-              Buy
-            </a>
-          </div>
         </div>
 
         <CardContent className="space-y-5 px-6 pb-0 pt-6">

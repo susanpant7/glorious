@@ -175,8 +175,14 @@ export default async function ProductDetailPage({ params }: Props) {
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div className="flex items-center gap-4">
                       <Avatar>
-                        <AvatarImage src={review.avatar} alt={review.author} />
-                        <AvatarFallback>{review.author.charAt(0)}</AvatarFallback>
+                        <AvatarFallback>
+                          {review.author
+                            .split(" ")
+                            .map((part) => part[0])
+                            .slice(0, 2)
+                            .join("")
+                            .toUpperCase()}
+                        </AvatarFallback>
                       </Avatar>
                       <div>
                         <p className="font-semibold text-slate-950">{review.author}</p>
