@@ -1,5 +1,6 @@
 import { site } from "@/lib/site";
 import { ThreePillars } from "@/components/about/ThreePillars";
+import Image from "next/image";
 
 function getClaimDescription(claim: string) {
   const map: Record<string, string> = {
@@ -26,10 +27,15 @@ export default function AboutPage() {
       <div className="bg-slate-50 py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="rounded-2xl bg-white p-10 shadow-sm">
-            <div className="flex items-center gap-6">
-              <div className="h-20 w-20 flex-shrink-0 rounded-full bg-gradient-to-br from-amber-400 to-rose-300 flex items-center justify-center text-white text-2xl font-bold">
-                G
-              </div>
+            <div className="flex flex-col items-center gap-8 text-center">
+              <Image
+                src="https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781273539/Logo_GlowRious_page-0001_gemjsg.png"
+                alt="glowrious"
+                width={240}
+                height={80}
+                className="h-auto w-auto object-contain"
+                priority
+              />
               <div>
                 <h1 className="text-2xl font-bold">{site.name}</h1>
                 <p className="text-sm text-slate-600">{site.description}</p>

@@ -81,7 +81,15 @@ export function TestimonialsSection() {
                 <div key={testimonial.id} className="w-full flex-shrink-0">
                   <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-4 py-8 text-center sm:px-6 md:px-8">
                     <div className="relative h-32 w-32 overflow-hidden rounded-full">
-                      <img src={testimonial.avatar} alt={testimonial.name} className="h-full w-full object-cover" />
+                      {/* <img src={testimonial.avatar} alt={testimonial.name} className="h-full w-full object-cover" /> */}
+                      <div className="h-full w-full flex items-center justify-center bg-slate-700 text-2xl font-semibold text-white">
+                        {testimonial.name
+                          .split(" ")
+                          .map((n) => n[0])
+                          .slice(0, 2)
+                          .join("")
+                          .toUpperCase()}
+                      </div>
                     </div>
 
                     <p className="max-w-3xl text-lg leading-8 text-slate-100 sm:text-xl">"{testimonial.quote}"</p>
