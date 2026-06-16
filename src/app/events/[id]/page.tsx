@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import EventQuickDetails from "@/components/events/EventQuickDetails";
 import { events, getEventById } from "@/lib/events";
 import EventMediaSlider from "@/components/events/EventMediaSlider";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -11,6 +13,35 @@ type Props = {
 
 export async function generateStaticParams() {
   return events.map((event) => ({ id: event.id }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const event = getEventById(id);
+
+  if (!event) {
+    return createPageMetadata({
+      title: "Event Not Found",
+      description: "The GlowRious event you are looking for could not be found.",
+      path: `/events/${id}`,
+      noIndex: true,
+    });
+  }
+
+  return createPageMetadata({
+    title: `${event.title} - ${event.category} on ${event.date}`,
+    description: `${event.summary} Join GlowRious at ${event.venue} on ${event.date}.`,
+    path: `/events/${event.id}`,
+    image: event.defaultImage,
+    imageAlt: `${event.title} by GlowRious`,
+    keywords: [
+      event.title,
+      `GlowRious ${event.category}`,
+      event.location,
+      event.venue,
+      ...event.tags,
+    ],
+  });
 }
 
 export default async function EventDetailPage({ params }: Props) {

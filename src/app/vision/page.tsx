@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Our Vision - Personal Care for Nepal & Beyond",
+  description:
+    "Explore the GlowRious vision for trusted skincare and haircare across Nepal and beyond, with innovation, accessibility, and lasting customer impact.",
+  path: "/vision",
+  keywords: [
+    "GlowRious vision",
+    "personal care Nepal",
+    "skincare innovation",
+    "haircare brand Nepal",
+    "GlowRious future",
+  ],
+});
+
 export default function VisionPage() {
   return (
     <div>

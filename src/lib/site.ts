@@ -5,8 +5,8 @@ export type NavLink = {
 };
 
 export const site = {
-  name: "glowrious Health Care",
-  shortName: "glowrious",
+  name: "Chasing your glow",
+  shortName: "GlowRious",
   description: "Beauty & skincare essentials crafted with care.",
   contact: {
     email: "glowrious.info@gmail.com",
@@ -42,7 +42,7 @@ export const site = {
     summaryTemplate: "Showing {count} products for {category}.",
   },
   about: {
-    title: "About glowrious Health Care",
+    title: "About GlowRious",
     description:
       "GlowRious is a premium dermatology-inspired skincare brand owned and marketed by Yuva Trade Concern, Nepal. Built around a single promise — Chasing your glow — the brand combines clinically respected actives with modern encapsulation science to deliver visible, comfortable results for everyday skin concerns.",
     values: [

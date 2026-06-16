@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Help Center - Orders, Shipping & Product Support",
+  description:
+    "Get help with GlowRious ordering, shipping, returns, product guidance, and customer support for skincare and haircare purchases.",
+  path: "/help",
+  keywords: [
+    "GlowRious help",
+    "GlowRious support",
+    "skincare order help",
+    "GlowRious shipping",
+    "GlowRious returns",
+  ],
+});
 
 export default function HelpPage() {
   return (

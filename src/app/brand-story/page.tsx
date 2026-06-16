@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Brand Story - Where Science Meets Self-Confidence",
+  description:
+    "Discover how GlowRious was founded in Nepal to create science-backed skincare for dark spots, melasma, uneven tone, and everyday confidence.",
+  path: "/brand-story",
+  keywords: [
+    "GlowRious brand story",
+    "GlowRious founded in Nepal",
+    "NEOSOME serum",
+    "skin brightening story",
+    "Yuva Trade Concern skincare",
+  ],
+});
+
 export default function BrandStoryPage() {
   return (
     <div>

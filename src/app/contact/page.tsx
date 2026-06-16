@@ -1,12 +1,42 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import Image from "next/image";
+import { createPageMetadata } from "@/lib/seo";
+
+const pageImage =
+  "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781624189/Interview_wall_Flex_For_Website_rexctv.png";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact GlowRious - Product Advice & Support",
+  description:
+    "Contact GlowRious in Kathmandu for product advice, order questions, retail inquiries, and skincare support by phone or email.",
+  path: "/contact",
+  image: pageImage,
+  imageAlt: "GlowRious contact and brand support",
+  keywords: [
+    "contact GlowRious",
+    "GlowRious Kathmandu",
+    "GlowRious phone number",
+    "skincare support Nepal",
+    "GlowRious email",
+  ],
+});
 
 export default function ContactPage() {
   const c = site.contact;
 
   return (
-    <div className="bg-slate-50 py-16">
+    <div className="relative isolate -mb-10 overflow-hidden bg-slate-50 py-16">
+      <Image
+        src={pageImage}
+        alt=""
+        fill
+        sizes="100vw"
+        className="absolute inset-0 -z-10 object-cover"
+        preload
+      />
+
       <div className="mx-auto max-w-4xl px-6">
         <div className="mb-8">
           <p className="text-sm uppercase tracking-[0.3em] text-amber-600">Get in touch</p>
@@ -22,32 +52,39 @@ export default function ContactPage() {
               width={180}
               height={60}
               className="h-auto w-auto object-contain"
-              priority
             />
-            <div>
-              <h2 className="text-xl font-semibold">{site.name}</h2>
-              <p className="text-sm text-slate-700">{site.description}</p>
-            </div>
           </div>
 
-          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          <div className="mt-6 grid gap-6">
             <div>
               <h3 className="text-lg font-semibold">Contact</h3>
               <p className="mt-3 text-sm text-slate-700">Address: {c.address}</p>
               <p className="mt-2 text-sm text-slate-700">Phone: {c.phone}</p>
-              <p className="mt-2 text-sm text-slate-700">Email: <a href={`mailto:${c.email}`} className="text-amber-600">{c.email}</a></p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold">Business hours</h3>
-              <p className="mt-3 text-sm text-slate-700">{c.hours.weekday}</p>
+              <p className="mt-2 text-sm text-slate-700">
+                Email:{" "}
+                <a href={`mailto:${c.email}`} className="text-amber-600">
+                  {c.email}
+                </a>
+              </p>
             </div>
           </div>
 
           <div className="mt-6">
             <h3 className="text-lg font-semibold">Customer support</h3>
-            <p className="mt-3 text-sm text-slate-700">For order enquiries, returns, or product questions, email us at <a href={`mailto:${c.email}`} className="text-amber-600">{c.email}</a> or call {c.phone}.</p>
-            <p className="mt-4 text-sm">Want to browse products? <Link href="/products" className="text-amber-600 hover:underline">View our catalog</Link>.</p>
+            <p className="mt-3 text-sm text-slate-700">
+              For order enquiries, returns, or product questions, email us at{" "}
+              <a href={`mailto:${c.email}`} className="text-amber-600">
+                {c.email}
+              </a>{" "}
+              or call {c.phone}.
+            </p>
+            <p className="mt-4 text-sm">
+              Want to browse products?{" "}
+              <Link href="/products" className="text-amber-600 hover:underline">
+                View our catalog
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </div>

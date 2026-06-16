@@ -8,12 +8,9 @@ export function FooterBrand() {
         alt="glowrious"
         width={280}
         height={90}
-        className="h-24 w-auto object-contain sm:h-32"
+        className="h-20 w-auto object-contain sm:h-24"
         priority
       />
-      <p className="mt-3 text-sm font-semibold uppercase tracking-[0.28em] text-amber-400">
-        Chasing your glow
-      </p>
     </div>
   );
 }

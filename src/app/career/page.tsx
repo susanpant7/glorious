@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import { Mail } from "lucide-react";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Careers at GlowRious - Join Our Beauty Team",
+  description:
+    "Explore career interest opportunities at GlowRious and learn about our culture, values, team life, and future hiring in beauty and personal care.",
+  path: "/career",
+  keywords: [
+    "GlowRious careers",
+    "beauty jobs Nepal",
+    "skincare careers",
+    "GlowRious hiring",
+    "personal care careers",
+  ],
+});
 
 export default function CareerPage() {
   return (
