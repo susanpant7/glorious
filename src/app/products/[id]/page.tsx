@@ -4,6 +4,7 @@ import { getProductById, products } from "@/lib/products";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ProductImageGallery } from "@/components/products/ProductImageGallery";
 import { SHOP_URL } from "@/lib/shop";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -33,13 +34,10 @@ export default async function ProductDetailPage({ params }: Props) {
       <div className="mx-auto max-w-7xl px-6">
           <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-amber-600">Product details</p>
-            <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
+            <h1 className="mt-3 text-4xl font-bold tracking-tight text-[var(--theme)] sm:text-5xl">
               {product.name}
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-              Discover the product profile with ingredients, benefits, and customer reviews for a confident choice.
-            </p>
+         
             <p className="mt-4 max-w-3xl whitespace-pre-line text-base leading-7 text-slate-700">
               {product.details}
             </p>
@@ -54,27 +52,19 @@ export default async function ProductDetailPage({ params }: Props) {
         <div className="space-y-8">
           <div className="grid gap-6 lg:grid-cols-[1.4fr_0.85fr]">
             <Card className="overflow-hidden border border-slate-200 shadow-sm">
-              <div className="group relative overflow-hidden bg-slate-100">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="h-[520px] w-full object-cover transition duration-500 ease-out group-hover:scale-110"
+              <div className="p-6">
+                <ProductImageGallery
+                  images={
+                    product.images ?? [product.image, product.image, product.image]
+                  }
+                  tag={product.category}
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/60 to-transparent p-6 text-white">
-                  <Badge variant="secondary" className="mb-3 uppercase tracking-[0.3em]">
-                    {product.category}
-                  </Badge>
-                  <p className="mt-3 text-3xl font-semibold tracking-tight text-white">{product.name}</p>
-                  <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-100">{product.description}</p>
-                </div>
               </div>
             </Card>
 
             <Card className="border border-slate-200 shadow-sm">
               <CardHeader className="flex items-start justify-between gap-4 px-8 pt-8 pb-0">
                   <div>
-                    <CardTitle className="text-2xl">Product details</CardTitle>
-                    <CardDescription>Click each section to expand for more information.</CardDescription>
                   </div>
                   <div className="flex items-center">
                     <Button
@@ -116,12 +106,24 @@ export default async function ProductDetailPage({ params }: Props) {
                     ))}
                   </TableBody>
                 </Table>
+                  <div className="mt-8">
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <div className="rounded-3xl bg-slate-50 p-5">
+                        <p className="text-sm text-slate-500">Shades</p>
+                        <p className="mt-2 font-semibold text-slate-950">{product.shades}</p>
+                      </div>
+                      <div className="rounded-3xl bg-slate-50 p-5">
+                        <p className="text-sm text-slate-500">Tone</p>
+                        <p className="mt-2 font-semibold text-slate-950">{product.tone}</p>
+                      </div>
+                    </div>
+                  </div>
               </CardContent>
             </Card>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[1.4fr_0.85fr]">
-            <Card className="border border-slate-200 shadow-sm">
+            <Card className="border border-slate-200 shadow-sm lg:col-span-2">
               <CardHeader className="space-y-3 px-8 pt-8 pb-0">
                 <CardTitle className="text-2xl">Product information</CardTitle>
               </CardHeader>
@@ -138,25 +140,6 @@ export default async function ProductDetailPage({ params }: Props) {
                     </AccordionItem>
                   ))}
                 </Accordion>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-slate-200 shadow-sm">
-              <CardHeader className="space-y-3 px-8 pt-8 pb-0">
-                <CardTitle className="text-2xl">Quick specs</CardTitle>
-                <CardDescription>Main product data at a glance.</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4 px-8 pb-8">
-                <div className="grid gap-4">
-                  <div className="rounded-3xl bg-slate-50 p-5">
-                    <p className="text-sm text-slate-500">Shades</p>
-                    <p className="mt-2 font-semibold text-slate-950">{product.shades}</p>
-                  </div>
-                  <div className="rounded-3xl bg-slate-50 p-5">
-                    <p className="text-sm text-slate-500">Tone</p>
-                    <p className="mt-2 font-semibold text-slate-950">{product.tone}</p>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           </div>
@@ -214,10 +197,16 @@ export default async function ProductDetailPage({ params }: Props) {
                   <Link
                     key={item.id}
                     href={`/products/${item.id}`}
-                    className="group overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-lg"
+                    className="group flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-lg"
                   >
-                    <img src={item.image} alt={item.name} className="h-40 w-full object-cover transition duration-500 group-hover:scale-105" />
-                    <div className="space-y-2 p-5">
+                    <div className="relative h-52 overflow-hidden bg-slate-100">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="mt-auto space-y-2 p-5">
                       <Badge variant="secondary" className="uppercase tracking-[0.28em] text-[11px]">
                         {item.category}
                       </Badge>

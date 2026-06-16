@@ -34,6 +34,7 @@ export type Product = {
   tone: string;
   colorClass: string;
   image: string;
+  images?: string[];
   specs: Spec[];
   sections: InfoSection[];
   rating: number;
@@ -56,6 +57,11 @@ export const products: Product[] = [
     colorClass: "bg-gradient-to-br from-cyan-100 via-slate-100 to-white",
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102619/GlowRious_Face_wash_e2dnwu.png",
+    images: [
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102619/GlowRious_Face_wash_e2dnwu.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106614/face_Wash_Glorious_06_eqzpi3.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106614/face_Wash_Glorious_04_s71ic0.png",
+    ],
     specs: [
       { label: "Net quantity", value: "100 ml" },
       { label: "Commodity", value: "Face Cleanser" },
@@ -128,6 +134,11 @@ export const products: Product[] = [
     colorClass: "bg-gradient-to-br from-emerald-100 via-slate-100 to-white",
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102798/GlowRious_Moisturiser_muq0y2.png",
+    images: [
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102798/GlowRious_Moisturiser_muq0y2.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Tube_dyksdw.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Glorious_01_sxublf.png",
+    ],
     specs: [
       { label: "Net quantity", value: "50 ml" },
       { label: "Commodity", value: "Moisturizer" },
@@ -200,6 +211,11 @@ export const products: Product[] = [
     colorClass: "bg-gradient-to-br from-yellow-100 via-amber-100 to-slate-50",
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Sun_Block_50_yuavqa.png",
+    images: [
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Sun_Block_50_yuavqa.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107051/Sun_block_50_tube_rexkfi.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107050/Glorious_Sun_block_50_06_c6gkfh.png",
+    ],
     specs: [
       { label: "Net quantity", value: "60 ml" },
       { label: "Commodity", value: "Sun Care" },
@@ -272,6 +288,11 @@ export const products: Product[] = [
     colorClass: "bg-gradient-to-br from-violet-100 via-slate-100 to-white",
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Shampoo_ewvcx0.jpg",
+    images: [
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Shampoo_ewvcx0.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106926/Shampoo_Conditioner_tbky3w.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106925/Gemini_Generated_Image_31qhj031qhj031qh_dylcry.png",
+    ],
     specs: [
       { label: "Net quantity", value: "200 ml" },
       { label: "Commodity", value: "Hair Care" },
@@ -344,6 +365,11 @@ export const products: Product[] = [
     colorClass: "bg-gradient-to-br from-orange-100 via-slate-100 to-white",
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Vitamin_C_h5igyp.png",
+    images: [
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Vitamin_C_h5igyp.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106615/Gemini_Generated_Image_fgz1rcfgz1rcfgz1_sutenb.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106615/Gemini_Generated_Image_fpor8qfpor8qfpor_ukfqkg.png",
+    ],
     specs: [
       { label: "Net quantity", value: "30 ml" },
       { label: "Commodity", value: "Serum" },
@@ -416,6 +442,11 @@ export const products: Product[] = [
     colorClass: "bg-gradient-to-br from-indigo-100 via-slate-100 to-white",
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102801/GlowRious_Night_Cream_ryqmny.jpg",
+    images: [
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102801/GlowRious_Night_Cream_ryqmny.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107508/Night_Cream_01_izzdta.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107506/Night_Cream_box_w5jajz.png",
+    ],
     specs: [
       { label: "Net quantity", value: "50 ml" },
       { label: "Commodity", value: "Night Cream" },
@@ -488,6 +519,11 @@ export const products: Product[] = [
     colorClass: "bg-gradient-to-br from-pink-100 via-slate-100 to-white",
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Cleanser_op8uzn.jpg",
+    images: [
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Cleanser_op8uzn.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106612/Gemini_Generated_Image_wyy3xlwyy3xlwyy3_bgvl85.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106612/Gemini_Generated_Image_xdhdjgxdhdjgxdhd_r4xdnm.png",
+    ],
     specs: [
       { label: "Net quantity", value: "150 ml" },
       { label: "Commodity", value: "Face Cleanser" },

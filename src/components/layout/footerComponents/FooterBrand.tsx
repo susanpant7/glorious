@@ -11,7 +11,7 @@ export function FooterBrand() {
         className="h-24 w-auto object-contain sm:h-32"
         priority
       />
-      <p className="mt-3 text-sm font-semibold uppercase tracking-[0.28em] text-amber-400">
+      <p className="mt-3 text-sm font-semibold uppercase tracking-[0.28em] text-[var(--theme)]">
         Chasing your glow
       </p>
     </div>

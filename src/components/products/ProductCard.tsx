@@ -22,21 +22,21 @@ export function ProductCard({ product }: { product: Product }) {
       onKeyDown={(e) => {
         if (e.key === "Enter") handleNavigate();
       }}
-      className="group block"
+      className="group block h-full"
     >
-      <Card className="relative h-full overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-[0_30px_90px_-40px_rgba(15,23,42,0.35)] cursor-pointer">
-        <div className={`relative h-72 overflow-hidden rounded-t-[1.5rem] bg-slate-100 ${product.colorClass}`}>
+      <Card className="relative flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-[0_30px_90px_-40px_rgba(15,23,42,0.35)] cursor-pointer">
+        <div className={`relative aspect-[4/3] overflow-hidden rounded-t-[1.5rem] bg-slate-100 ${product.colorClass}`}>
           <img
             src={product.image}
             alt={product.name}
-            className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-110"
+            className="h-full w-full object-contain transition duration-700 ease-out group-hover:scale-105"
           />
         </div>
 
-        <CardContent className="space-y-5 px-6 pb-0 pt-6">
+        <CardContent className="flex-1 space-y-5 px-6 pb-0 pt-6">
           <h3 className="text-xl font-semibold text-slate-950">{product.name}</h3>
 
-          <div className="flex items-start justify-between gap-3">
+          <div className="flex flex-col gap-3">
             <p className="text-sm leading-7 text-slate-600">{product.description}</p>
             {product.badge ? (
               <Badge variant="secondary" className="uppercase tracking-[0.24em]">
@@ -46,8 +46,8 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
         </CardContent>
 
-        <CardFooter className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/70 px-6 py-4">
-          <span className="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition duration-300 group-hover:bg-slate-800">
+        <CardFooter className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/70 px-6 py-4">
+          <span className="relative inline-flex overflow-hidden rounded-full bg-[var(--theme)] px-4 py-2 text-sm font-semibold text-[var(--theme-foreground)] shadow-sm transition duration-300 ease-out before:absolute before:inset-y-0 before:-right-full before:w-full before:bg-gradient-to-r before:from-[rgba(255,255,255,0.22)] before:to-transparent before:transition-transform before:duration-300 group-hover:before:translate-x-[-100%] group-hover:bg-[color-mix(in_srgb,var(--theme),black_15%)]">
             View details
           </span>
           <a
@@ -55,7 +55,7 @@ export function ProductCard({ product }: { product: Product }) {
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="text-sm text-amber-600 font-semibold"
+            className="text-sm text-[var(--theme)] font-semibold transition duration-300 ease-out group-hover:text-[var(--theme)]"
           >
             Buy
           </a>
