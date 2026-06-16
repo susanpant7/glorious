@@ -1,9 +1,27 @@
+import type { Metadata } from "next";
 import { site } from "@/lib/site";
 import { ThreePillars } from "@/components/about/ThreePillars";
 import Image from "next/image";
+import { createPageMetadata } from "@/lib/seo";
 
 const pageImage =
   "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781624189/Interview_wall_Flex_For_Website_rexctv.png";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "About GlowRious - Science-Led Beauty from Nepal",
+  description:
+    "Learn about GlowRious, a Nepal-based skincare and haircare brand by Yuva Trade Concern focused on clean values, trusted actives, and visible glow.",
+  path: "/about",
+  image: pageImage,
+  imageAlt: "GlowRious brand presentation wall",
+  keywords: [
+    "about GlowRious",
+    "Yuva Trade Concern",
+    "Nepal skincare brand",
+    "clean beauty Nepal",
+    "dermatologically inspired skincare",
+  ],
+});
 
 function getClaimDescription(claim: string) {
   const map: Record<string, string> = {

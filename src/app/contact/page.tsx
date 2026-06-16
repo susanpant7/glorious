@@ -1,9 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import Image from "next/image";
+import { createPageMetadata } from "@/lib/seo";
 
 const pageImage =
   "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781624189/Interview_wall_Flex_For_Website_rexctv.png";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact GlowRious - Product Advice & Support",
+  description:
+    "Contact GlowRious in Kathmandu for product advice, order questions, retail inquiries, and skincare support by phone or email.",
+  path: "/contact",
+  image: pageImage,
+  imageAlt: "GlowRious contact and brand support",
+  keywords: [
+    "contact GlowRious",
+    "GlowRious Kathmandu",
+    "GlowRious phone number",
+    "skincare support Nepal",
+    "GlowRious email",
+  ],
+});
 
 export default function ContactPage() {
   const c = site.contact;

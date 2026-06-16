@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProductById, products } from "@/lib/products";
@@ -9,6 +10,7 @@ import { SHOP_URL } from "@/lib/shop";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -16,6 +18,36 @@ type Props = {
 
 export function generateStaticParams() {
   return products.map((product) => ({ id: product.id }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const product = getProductById(id);
+
+  if (!product) {
+    return createPageMetadata({
+      title: "Product Not Found",
+      description: "The GlowRious product you are looking for could not be found.",
+      path: `/products/${id}`,
+      noIndex: true,
+    });
+  }
+
+  return createPageMetadata({
+    title: `${product.name} - ${product.type} for ${product.tone}`,
+    description: `${product.description} Shop GlowRious ${product.name} in Nepal for NPR ${product.price}.`,
+    path: `/products/${product.id}`,
+    image: product.image,
+    imageAlt: `${product.name} by GlowRious`,
+    keywords: [
+      product.name,
+      `GlowRious ${product.name}`,
+      product.type,
+      product.category,
+      `${product.name} Nepal`,
+      "GlowRious skincare",
+    ],
+  });
 }
 
 export default async function ProductDetailPage({ params }: Props) {

@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import { EventCard } from "@/components/events/EventCard";
 import { events } from "@/lib/events";
 import type { Event } from "@/lib/events";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Beauty Events, Skincare Workshops & Glow Experiences",
+  description:
+    "Explore GlowRious product launches, skincare workshops, beauty masterclasses, webinars, retreats, and glow-focused experiences.",
+  path: "/events",
+  keywords: [
+    "GlowRious events",
+    "skincare workshops",
+    "beauty masterclass",
+    "skin health webinar",
+    "beauty events Nepal",
+  ],
+});
 
 const eventIds = ["skincare-launch", "makeup-masterclass", "skin-health-webinar"];
 const experienceIds = ["wellness-weekend", "sensory-salon-evening", "holiday-glow-studio"];

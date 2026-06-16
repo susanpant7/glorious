@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Our Mission - Trusted Skin & Hair Care Solutions",
+  description:
+    "Read the GlowRious mission to empower people with high-quality skincare and haircare, transparent formulation, customer education, and personalized guidance.",
+  path: "/mission",
+  keywords: [
+    "GlowRious mission",
+    "trusted skincare Nepal",
+    "skin assessment programs",
+    "customer education skincare",
+    "quality personal care",
+  ],
+});
+
 export default function MissionPage() {
   return (
     <div>

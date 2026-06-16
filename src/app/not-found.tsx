@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Page Not Found",
+  description:
+    "The GlowRious page you are looking for could not be found. Return home to explore skincare, haircare, events, and support.",
+  path: "/404",
+  noIndex: true,
+});
 
 export default function NotFound() {
   return (
