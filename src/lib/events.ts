@@ -38,7 +38,7 @@ export const events: Event[] = [
     summary: "Discover our newest botanical skincare line with live demos, expert talks, and exclusive launch offers.",
     description:
       "Join us for an immersive evening where beauty professionals and skincare lovers gather to experience new formulations, try product samples, and learn about clean, glowing skin routines from industry experts.",
-    organizer: "glowrious Health Care Events",
+    organizer: "GlowRious Events",
     ticketPrice: "799",
     ticketsAvailable: "Limited seats available",
     registrationUrl: "https://example.com/events/skincare-launch",
