@@ -46,8 +46,8 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
         </CardContent>
 
-        <CardFooter className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/70 px-6 py-4">
-          <span className="relative inline-flex overflow-hidden rounded-full bg-[var(--theme)] px-4 py-2 text-sm font-semibold text-[var(--theme-foreground)] shadow-sm transition duration-300 ease-out before:absolute before:inset-y-0 before:-right-full before:w-full before:bg-gradient-to-r before:from-[rgba(255,255,255,0.22)] before:to-transparent before:transition-transform before:duration-300 group-hover:before:translate-x-[-100%] group-hover:bg-[color-mix(in_srgb,var(--theme),black_15%)]">
+        <CardFooter className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/70 bg-slate-50 px-6 py-4">
+          <span className="text-sm font-semibold text-slate-950 transition duration-300 group-hover:text-amber-600">
             View details
           </span>
           <a
