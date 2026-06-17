@@ -68,22 +68,10 @@ export const galleryImages: GalleryImage[] = [
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105885/Gemini_Generated_Image_v8yiav8yiav8yiav_uwc2g2.png",
   },
   {
-    id: "moisturiser-box",
-    title: "Moisturiser Box",
-    description: "Packaging image",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_box_yo4sai.png",
-  },
-  {
     id: "gemini-yl3p02",
     title: "Gemini yl3p02",
     description: "Generated image",
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Gemini_Generated_Image_yl3p02yl3p02yl3p_gpvf8g.png",
-  },
-  {
-    id: "moisturiser-tube",
-    title: "Moisturiser Tube",
-    description: "Packaging image",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Tube_dyksdw.png",
   },
   {
     id: "moisturiser-kdyz8b",
@@ -96,12 +84,6 @@ export const galleryImages: GalleryImage[] = [
     title: "Moisturiser Glorious",
     description: "Brand packaging",
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Glorious_y1qlwb.png",
-  },
-  {
-    id: "moisturiser-tube-01",
-    title: "Moisturiser Tube 01",
-    description: "Packaging image",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Tube_01_j5jovd.png",
   },
   {
     id: "moisturiser-glorious-04",
@@ -408,12 +390,6 @@ export const galleryImages: GalleryImage[] = [
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106925/Gemini_Generated_Image_31qhj031qhj031qh_dylcry.png",
   },
   {
-    id: "haircare-06",
-    title: "Conditioner Excellence",
-    description: "Premium conditioner product shot designed for luxury brand storytelling.",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106924/Conditioner_bottle_h5cqjf.png",
-  },
-  {
     id: "sun-care-01",
     title: "Sunlit Beauty",
     description: "Radiant skincare campaign celebrating healthy, protected skin.",
@@ -498,12 +474,6 @@ export const galleryImages: GalleryImage[] = [
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107052/Sun_block_50_bunwss.png",
   },
   {
-    id: "product-spf-02",
-    title: "SPF 50 Tube",
-    description: "Clean product presentation highlighting daily UV protection.",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107051/Sun_block_50_tube_rexkfi.jpg",
-  },
-  {
     id: "product-spf-03",
     title: "Glorious SPF 50",
     description: "Luxury sunscreen visual crafted for premium skincare campaigns.",
@@ -538,12 +508,6 @@ export const galleryImages: GalleryImage[] = [
     title: "Skin Barrier SPF",
     description: "Elegant sunscreen visual highlighting daily skincare essentials.",
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107048/Glorious_Sun_block_50_02_aboc3s.png",
-  },
-  {
-    id: "product-spf-09",
-    title: "Glorious Protection",
-    description: "Premium SPF campaign visual with modern branding.",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107048/Glorious_Sun_block_50_01BG_q1pkzk.png",
   },
   {
     id: "product-spf-10",
@@ -665,18 +629,6 @@ export const galleryImages: GalleryImage[] = [
     title: "Restorative Glow",
     description: "Premium skincare campaign showcasing radiant skin recovery overnight.",
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107507/Night_Cream_srqa0c.png",
-  },
-  {
-    id: "nightcare-03",
-    title: "Night Ritual Box",
-    description: "Elegant product packaging design highlighting a complete night skincare routine.",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107506/Night_Cream_box_w5jajz.png",
-  },
-  {
-    id: "nightcare-04",
-    title: "Hydration Bottle",
-    description: "Minimalist product shot of premium night cream bottle for skincare branding.",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107505/Night_Cream_bottle_dogxc9.png",
   },
   {
     id: "nightcare-05",
