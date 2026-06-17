@@ -56,7 +56,7 @@ export const products: Product[] = [
     tone: "All skin types",
     colorClass: "bg-gradient-to-br from-cyan-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102619/GlowRious_Face_wash_e2dnwu.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703022/GlowRious_Face_wash_1_nvwoij.png",
     images: [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102619/GlowRious_Face_wash_e2dnwu.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106614/face_Wash_Glorious_06_eqzpi3.png",
@@ -133,7 +133,7 @@ export const products: Product[] = [
     tone: "All skin types",
     colorClass: "bg-gradient-to-br from-emerald-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102798/GlowRious_Moisturiser_muq0y2.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703233/GlowRious_Moisturiser_1_mfzlt8.png",
     images: [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102798/GlowRious_Moisturiser_muq0y2.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Tube_dyksdw.png",
@@ -210,9 +210,9 @@ export const products: Product[] = [
     tone: "All skin tones",
     colorClass: "bg-gradient-to-br from-yellow-100 via-amber-100 to-slate-50",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Sun_Block_50_yuavqa.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703315/GlowRious_Sun_Block_50_1_fokfvd.png",
     images: [
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Sun_Block_50_yuavqa.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703315/GlowRious_Sun_Block_50_1_fokfvd.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107051/Sun_block_50_tube_rexkfi.jpg",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107050/Glorious_Sun_block_50_06_c6gkfh.png",
     ],
@@ -287,9 +287,9 @@ export const products: Product[] = [
     tone: "All hair types",
     colorClass: "bg-gradient-to-br from-violet-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Shampoo_ewvcx0.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703146/GlowRious_Shampoo_f73gmj.png",
     images: [
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Shampoo_ewvcx0.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703146/GlowRious_Shampoo_f73gmj.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106926/Shampoo_Conditioner_tbky3w.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106925/Gemini_Generated_Image_31qhj031qhj031qh_dylcry.png",
     ],
@@ -364,9 +364,9 @@ export const products: Product[] = [
     tone: "All skin tones",
     colorClass: "bg-gradient-to-br from-orange-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Vitamin_C_h5igyp.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703429/GlowRious_Vitamin_C_1_kb7a2p.png",
     images: [
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Vitamin_C_h5igyp.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703429/GlowRious_Vitamin_C_1_kb7a2p.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106615/Gemini_Generated_Image_fgz1rcfgz1rcfgz1_sutenb.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106615/Gemini_Generated_Image_fpor8qfpor8qfpor_ukfqkg.png",
     ],
@@ -441,9 +441,9 @@ export const products: Product[] = [
     tone: "All skin types",
     colorClass: "bg-gradient-to-br from-indigo-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102801/GlowRious_Night_Cream_ryqmny.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703531/GlowRious_Night_Cream_lkuy9p.png",
     images: [
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102801/GlowRious_Night_Cream_ryqmny.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703531/GlowRious_Night_Cream_lkuy9p.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107508/Night_Cream_01_izzdta.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107506/Night_Cream_box_w5jajz.png",
     ],
@@ -518,9 +518,9 @@ export const products: Product[] = [
     tone: "Sensitive skin friendly",
     colorClass: "bg-gradient-to-br from-pink-100 via-slate-100 to-white",
     image:
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Cleanser_op8uzn.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703656/GlowRious_Cleanser_ibsi70.png",
     images: [
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102802/GlowRious_Cleanser_op8uzn.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703656/GlowRious_Cleanser_ibsi70.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106612/Gemini_Generated_Image_wyy3xlwyy3xlwyy3_bgvl85.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106612/Gemini_Generated_Image_xdhdjgxdhdjgxdhd_r4xdnm.png",
     ],
