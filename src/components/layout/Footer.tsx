@@ -5,23 +5,29 @@ import { FooterBrand, FooterBottom, FooterContact, FooterLinkGroup, FooterSocial
 
 export function Footer() {
   return (
-    <footer className="mt-10 bg-slate-950 text-slate-300">
+    <footer className="bg-slate-950 text-slate-300">
       <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-      <div className="mx-auto max-w-[1380px] px-6 py-10">
-        <div className="mb-10 grid gap-8 md:grid-cols-3 md:items-center">
-          <FooterBrand />
-          <div className="text-left md:text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--theme)] sm:text-sm md:whitespace-nowrap md:tracking-[0.35em]">
-              Chasing your glow
-            </p>
+      <div className="mx-auto max-w-[1380px] px-6 py-6 md:py-10">
+        {/* Premium Top Section - Asymmetrical Layout */}
+        <div className="mb-12 flex flex-col gap-10 md:mb-16 md:flex-row md:items-start md:justify-between lg:gap-16">
+          {/* Left: Logo & Tagline */}
+          <div className="flex flex-col md:flex-1">
+            <FooterBrand />
+        
           </div>
-          <FooterSocial />
+
+          {/* Right: Join Community Section with Offset */}
+          <div className="md:flex-1 md:pt-12 lg:pt-16">
+            <FooterSocial />
+          </div>
         </div>
 
-        <div className="mb-10 h-px bg-slate-800" />
+        {/* Divider */}
+        <div className="mb-12 h-px bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 md:mb-14" />
 
-        <div className="mb-10 grid gap-10 md:grid-cols-3">
+        {/* Bottom Section - Navigation, Contact, Legal */}
+        <div className="mb-12 grid gap-12 md:mb-14 md:grid-cols-3 md:gap-10 lg:gap-16">
           <FooterLinkGroup title="Navigation" links={footerData.quickLinks} />
           <FooterContact />
           <FooterLinkGroup title="Legal" links={footerData.legalLinks} align="right" />

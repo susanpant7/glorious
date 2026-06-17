@@ -112,23 +112,29 @@ export function HeroProductSlider() {
           <p className="mt-2 max-h-12 overflow-hidden animate-[heroFade_850ms_240ms_ease-out_both] text-sm leading-6 text-slate-200">
             {activeProduct.description}
           </p>
-          <div className="mt-4 animate-[heroFade_850ms_360ms_ease-out_both] flex flex-wrap items-center gap-4">
-            <Button
-              asChild
-              className="h-10 cursor-pointer rounded-full px-5 text-sm font-semibold shadow-lg shadow-amber-950/20 transition duration-500 hover:-translate-y-0.5"
-            >
-              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
-                <ShoppingBag className="mr-2 size-4" />
-                Shop Now
-              </a>
-            </Button>
-            <Link
-              href={productHref}
-              className="cursor-pointer text-sm font-semibold text-white/85 underline-offset-4 transition duration-500 hover:text-amber-100 hover:underline"
-            >
-              Learn More
-            </Link>
-          </div>
+              <div className="mt-4 animate-[heroFade_850ms_360ms_ease-out_both] flex flex-wrap items-center gap-4">
+                <Button
+                  asChild
+                  className="h-10 cursor-pointer rounded-full px-5 text-sm font-semibold shadow-lg shadow-amber-950/20 transition duration-500 hover:-translate-y-0.5"
+                >
+                  <a
+                    href={SHOP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onPointerDown={(e) => e.stopPropagation()}
+                  >
+                    <ShoppingBag className="mr-2 size-4" />
+                    Shop Now
+                  </a>
+                </Button>
+                <Link
+                  href={productHref}
+                  onPointerDown={(e) => e.stopPropagation()}
+                  className="cursor-pointer text-sm font-semibold text-white/85 underline-offset-4 transition duration-500 hover:text-amber-100 hover:underline"
+                >
+                  Learn More
+                </Link>
+              </div>
         </div>
       </div>
 
