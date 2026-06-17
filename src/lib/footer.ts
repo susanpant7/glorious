@@ -18,6 +18,8 @@ export const footerData = {
   socialLinks: [
     { icon: "facebook", label: "Facebook", href: "https://www.facebook.com/glowriousnpl" },
     { icon: "instagram", label: "Instagram", href: "https://www.instagram.com/glowrious______" },
+    { icon: "twitter", label: "Twitter", href: "https://twitter.com/glowrious" },
+    { icon: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/company/glowrious" },
     { icon: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@glowrious_nepal" },
   ],
   legalLinks: [

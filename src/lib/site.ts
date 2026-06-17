@@ -31,8 +31,7 @@ export const site = {
       "GlowRious is a premium dermatology-inspired skincare brand owned and marketed by Yuva Trade Concern, Nepal. Built around a single promise — Chasing your glow — the brand combines clinically respected actives with modern encapsulation science to deliver visible, comfortable results for everyday skin concerns.",
   },
   heroActions: {
-    primary: "Shop products",
-    secondary: "View listings",
+    primary: "Shop products"
   },
   featured: {
     subtitle: "Trending now",

@@ -130,3 +130,56 @@
     @apply font-sans;
     }
 }
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroImage {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes trainMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Button train effect: subtle moving sheen across the button on hover */
+.btn-train {
+  position: relative;
+  overflow: hidden;
+}
+.btn-train::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 120%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.06) 45%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 55%, transparent 100%);
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+.btn-train:hover::before {
+  animation: trainMove 900ms cubic-bezier(.2,.9,.2,1) forwards;
+}
+
+/* Ensure focus outlines remain visible for accessibility */
+.btn-train:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.08);
+  outline-offset: 2px;
+}

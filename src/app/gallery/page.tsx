@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GallerySection } from "@/components/gallery/GallerySection";
+import { Gallery } from "@/components/gallery/Gallery";
 import { galleryImages } from "@/lib/gallery";
 import type { GalleryImage } from "@/lib/gallery";
 import { createPageMetadata } from "@/lib/seo";
@@ -28,5 +28,5 @@ async function getCloudinaryImages(): Promise<GalleryImage[]> {
 
 export default async function GalleryPage() {
   const images = await getCloudinaryImages();
-  return <GallerySection images={images} maxItems={8} showViewMore={false} />;
+  return <Gallery images={images} />;
 }

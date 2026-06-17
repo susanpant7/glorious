@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { GalleryModal } from "@/components/gallery/GalleryModal";
+import { ImageModal } from "@/components/gallery/ImageModal";
 import type { GalleryImage } from "@/lib/gallery";
 
 export function GallerySection({
@@ -13,7 +13,7 @@ export function GallerySection({
   maxItems?: number;
   showViewMore?: boolean;
 }) {
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [visibleCount, setVisibleCount] = useState(maxItems);
   const visibleImages = images.slice(0, visibleCount);
   const hasMore = visibleCount < images.length;
@@ -36,15 +36,15 @@ export function GallerySection({
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-          {visibleImages.map((image) => (
+          {visibleImages.map((image, index) => (
             <button
               key={image.id}
               type="button"
-              aria-label={`Open image ${image.title} in viewer`}
-              onClick={() => setSelectedImage(image)}
+              aria-label="Open image in viewer"
+              onClick={() => setSelectedIndex(index)}
               className="group cursor-zoom-in overflow-hidden rounded-[2rem] bg-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="relative h-72 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img
                   src={image.src}
                   alt={image.title}
@@ -76,7 +76,14 @@ export function GallerySection({
         ) : null}
       </div>
 
-      {selectedImage ? <GalleryModal image={selectedImage} onClose={() => setSelectedImage(null)} /> : null}
+      {selectedIndex !== null ? (
+        <ImageModal
+          images={images}
+          selectedIndex={selectedIndex}
+          onClose={() => setSelectedIndex(null)}
+          onSelect={setSelectedIndex}
+        />
+      ) : null}
     </section>
   );
 }
