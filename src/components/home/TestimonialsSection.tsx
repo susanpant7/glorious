@@ -60,7 +60,6 @@ export function TestimonialsSection() {
             Our clients say
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
-            Real customer feedback gives this page personality and trust. Swipe or use the arrows to browse each testimonial.
           </p>
         </div>
 
