@@ -3,6 +3,8 @@
 import { useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ShoppingBag } from "lucide-react";
 import type { Product } from "@/lib/products";
 import { SHOP_URL } from "@/lib/shop";
 import React from "react";
@@ -50,15 +52,18 @@ export function ProductCard({ product }: { product: Product }) {
           <span className="text-sm font-semibold text-slate-950 transition duration-300 group-hover:text-amber-600">
             View details
           </span>
-          <a
-            href={SHOP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="text-sm text-[var(--theme)] font-semibold transition duration-300 ease-out group-hover:text-[var(--theme)]"
-          >
-            Buy
-          </a>
+          <Button asChild size="sm">
+            <a
+              href={SHOP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="flex items-center gap-2"
+            >
+              <ShoppingBag className="size-4" />
+              Buy
+            </a>
+          </Button>
         </CardFooter>
       </Card>
     </div>

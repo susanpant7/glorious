@@ -11,7 +11,7 @@ const badgeVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
         secondary:
-          "bg-[var(--theme)] text-[var(--theme-foreground)] shadow-sm transition duration-200 ease-out hover:bg-[color-mix(in_srgb,var(--theme),black_15%)] hover:-translate-y-[1px]",
+          "rounded-full bg-[linear-gradient(90deg,#cd7d01_0%,#eea504_100%),linear-gradient(90deg,rgba(254,190,17,0.25)_0%,rgba(254,190,17,1)_50%,rgba(254,190,17,0.25)_100%)] text-white shadow-sm transition duration-200 ease-out hover:brightness-110 hover:-translate-y-[1px]",
         destructive:
           "bg-destructive/10 text-destructive focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:focus-visible:ring-destructive/40 [a]:hover:bg-destructive/20",
         outline:

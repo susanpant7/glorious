@@ -199,7 +199,7 @@ export const products: Product[] = [
   },
   {
     id: "sun-block",
-    name: "Sun Block SPF 50 PA+++",
+    name: "Sun Block",
     category: "SkinCare",
     type: "Sun Cream",
     color: "Light",
@@ -353,7 +353,7 @@ export const products: Product[] = [
   },
   {
     id: "vitamin-c-serum",
-    name: "Skin Brightening 15% Vitamin C Face Serum",
+    name: "Skin Brightening Vitamin C Face Serum",
     category: "SkinCare",
     type: "Serum",
     color: "Radiant",

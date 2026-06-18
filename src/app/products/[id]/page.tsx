@@ -5,12 +5,27 @@ import { getProductById, products } from "@/lib/products";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ShoppingBag } from "lucide-react";
 import { ProductImageGallery } from "@/components/products/ProductImageGallery";
 import { SHOP_URL } from "@/lib/shop";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { createPageMetadata } from "@/lib/seo";
+
+const productThemeColors: Record<string, string> = {
+  "skin-cleanser": "#1f5c5a",
+  "night-cream": "#781a97",
+  "vitamin-c-serum": "#c31e62",
+  "sun-block": "#f0c214",
+  "moisturizer": "#1c2147",
+  "shampoo": "#13887c",
+  "face-wash": "#4ea32a",
+};
+
+function productThemeColor(id: string) {
+  return productThemeColors[id] ?? "#1f5c5a";
+}
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -66,11 +81,11 @@ export default async function ProductDetailPage({ params }: Props) {
       <div className="mx-auto max-w-7xl px-6">
           <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="mt-3 text-4xl font-bold tracking-tight text-[var(--theme)] sm:text-5xl">
+            <h1 className="mt-3 text-5xl font-bold tracking-tight text-[var(--theme)] sm:text-6xl">
               {product.name}
             </h1>
          
-            <p className="mt-4 max-w-3xl whitespace-pre-line text-base leading-7 text-slate-700">
+            <p className="mt-4 max-w-3xl whitespace-pre-line text-lg leading-8 text-slate-700">
               {product.details}
             </p>
           </div>
@@ -95,32 +110,24 @@ export default async function ProductDetailPage({ params }: Props) {
             </Card>
 
             <Card className="border border-slate-200 shadow-sm">
-              <CardHeader className="flex items-start justify-between gap-4 px-8 pt-8 pb-0">
-                  <div>
-                  </div>
-                  <div className="flex items-center">
-                    <Button
-                      asChild
-                      size="sm"
-                      className="bg-amber-500 text-white hover:bg-amber-600 transform transition duration-200 hover:-translate-y-1 active:translate-y-px shadow-md"
-                    >
-                      <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4 mr-2"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={1.5}
-                          aria-hidden="true"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 6m12-6l2 6M9 19a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z" />
-                        </svg>
-                        Shop Now
-                      </a>
-                    </Button>
-                  </div>
-                </CardHeader>
+                <CardHeader className="flex items-start justify-between gap-4 px-8 pt-8 pb-0">
+                    <div>
+                      {/* product title shown here using product theme color */}
+                      {product ? (
+                        <h3 className="text-3xl font-bold" style={{ color: productThemeColor(product.id) }}>
+                          {product.name.toUpperCase()}
+                        </h3>
+                      ) : null}
+                    </div>
+                    <div className="flex items-center">
+                      <Button asChild size="sm">
+                        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          <ShoppingBag className="size-4" />
+                          Shop Now
+                        </a>
+                      </Button>
+                    </div>
+                  </CardHeader>
               <CardContent className="px-8 pb-8">
                 <Table>
                   <TableHeader>

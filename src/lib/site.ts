@@ -28,10 +28,10 @@ export const site = {
     badge: "GlowRious",
     title: "Chasing your glow",
     description:
-      "GlowRious is a premium dermatology-inspired skincare brand owned and marketed by Yuva Trade Concern, Nepal. Built around a single promise — Chasing your glow — the brand combines clinically respected actives with modern encapsulation science to deliver visible, comfortable results for everyday skin concerns.",
+      "Skincare built for Nepal's skin, climate, and altitude. Dermatologist-formulated actives. Vegan. Made for you. Loved by 1,000+ customers across Nepal.",
   },
   heroActions: {
-    primary: "Shop products"
+    primary: "Shop the range"
   },
   featured: {
     subtitle: "Trending now",

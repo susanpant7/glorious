@@ -27,7 +27,7 @@ const faqData: FAQItem[] = [
     id: "general-3",
     category: "General",
     question: "How long has Glowrious been in business?",
-    answer: "Glowrious was founded in 2020 and has been growing steadily since then. We've served thousands of customers and expanded our product range significantly."
+    answer: "Glowrious was founded in 2024 and has been growing steadily since then. We've served thousands of customers and expanded our product range significantly."
   },
 
   {

@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://glowrious.com"),
   applicationName: "GlowRious",
   title: {
-    default: "GlowRious | Dermatology-Inspired Skincare in Nepal",
+    default: "Nepal's Dermatology Tested Skin & Haircare | GlowRious",
     template: "%s | GlowRious",
   },
   description:
-    "GlowRious creates dermatology-inspired skincare and haircare for Nepal, combining proven actives, clean formulation values, and everyday routines for visible glow.",
+    "GlowRious brings dermatologist-tested skin &haircare, including brightening serums & night cream. Vegan, cruelty-free, and made for Nepal's skin. Shop now! ",
   category: "beauty",
   creator: "GlowRious",
   publisher: "Yuva Trade Concern",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "GlowRious | Dermatology-Inspired Skincare in Nepal",
+    title: "Nepal's Dermatology Tested Skin & Haircare | GlowRious",
     description:
-      "Explore GlowRious skincare, sun care, haircare, and brightening formulas made for daily confidence and visible results.",
+      "GlowRious brings dermatologist-tested skin &haircare, including brightening serums & night cream. Vegan, cruelty-free, and made for Nepal's skin. Shop now! ",
     url: "/",
     siteName: "GlowRious",
     images: [
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GlowRious | Dermatology-Inspired Skincare in Nepal",
+    title: "Nepal's Dermatology Tested Skin & Haircare | GlowRious",
     description:
-      "Premium skincare and haircare powered by thoughtful actives, clean values, and the promise of chasing your glow.",
+      "GlowRious brings dermatologist-tested skin &haircare, including brightening serums & night cream. Vegan, cruelty-free, and made for Nepal's skin. Shop now! ",
     images: [defaultOgImage],
   },
 };
