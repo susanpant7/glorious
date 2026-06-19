@@ -27,7 +27,10 @@ export const footerData = {
     { label: "Brand story", href: "/brand-story" },
     { label: "Mission", href: "/mission" },
     { label: "Vision", href: "/vision" },
-    { label: "FAQs", href: "/faqs" }
+    { label: "FAQs", href: "/faqs" },
+    { label: "Refund Policy", href: "/refund-policy" },
+    { label: "Terms & Conditions", href: "/terms-conditions" },
+    { label: "Privacy Policy", href: "/privacy-policy" }
   ],
   copyright: "© 2026 glowrious. All Rights Reserved.",
 };
