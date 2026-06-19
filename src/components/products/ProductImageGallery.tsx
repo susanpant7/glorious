@@ -13,6 +13,7 @@ export function ProductImageGallery({ images, tag }: ProductImageGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [initialized, setInitialized] = useState(false);
 
   const total = validImages.length || 1;
   const selectedImage = validImages[selectedIndex] ?? validImages[0] ?? "";
@@ -20,6 +21,53 @@ export function ProductImageGallery({ images, tag }: ProductImageGalleryProps) {
   useEffect(() => {
     setLoaded(false);
   }, [selectedImage]);
+
+  useEffect(() => {
+    if (initialized || validImages.length < 2) {
+      return;
+    }
+
+    let active = true;
+
+    const loadImage = (src: string) =>
+      new Promise<{ src: string; width: number; height: number }>((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve({ src, width: img.naturalWidth, height: img.naturalHeight });
+        img.onerror = () => resolve({ src, width: 0, height: 0 });
+        img.src = src;
+      });
+
+    Promise.all(validImages.map(loadImage)).then((results) => {
+      if (!active) {
+        return;
+      }
+
+      const secondaryResults = results
+        .map((result, index) => ({ ...result, index }))
+        .filter((item) => item.index > 0);
+
+      if (!secondaryResults.length) {
+        setInitialized(true);
+        return;
+      }
+
+      const bestSecondary = secondaryResults.reduce((best, current) => {
+        const bestArea = best.width * best.height;
+        const currentArea = current.width * current.height;
+        return currentArea > bestArea ? current : best;
+      }, secondaryResults[0]);
+
+      if (bestSecondary.width > 0 && bestSecondary.index !== selectedIndex) {
+        setSelectedIndex(bestSecondary.index);
+      }
+
+      setInitialized(true);
+    });
+
+    return () => {
+      active = false;
+    };
+  }, [initialized, selectedIndex, validImages]);
 
   useEffect(() => {
     if (!validImages.length) {

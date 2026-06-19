@@ -135,9 +135,9 @@ export const products: Product[] = [
     image:
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703233/GlowRious_Moisturiser_1_mfzlt8.png",
     images: [
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781102798/GlowRious_Moisturiser_muq0y2.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Tube_dyksdw.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Glorious_01_sxublf.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105883/Gemini_Generated_Image_c82r93c82r93c82r_vgw0dq.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_kdyz8b.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105886/Moisturiser_Glorious_y1qlwb.png",
     ],
     specs: [
       { label: "Net quantity", value: "50 ml" },
@@ -213,7 +213,7 @@ export const products: Product[] = [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703315/GlowRious_Sun_Block_50_1_fokfvd.png",
     images: [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703315/GlowRious_Sun_Block_50_1_fokfvd.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107051/Sun_block_50_tube_rexkfi.jpg",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107052/Sun_block_50_bunwss.png",
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107050/Glorious_Sun_block_50_06_c6gkfh.png",
     ],
     specs: [
@@ -367,8 +367,8 @@ export const products: Product[] = [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703429/GlowRious_Vitamin_C_1_kb7a2p.png",
     images: [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703429/GlowRious_Vitamin_C_1_kb7a2p.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106615/Gemini_Generated_Image_fgz1rcfgz1rcfgz1_sutenb.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106615/Gemini_Generated_Image_fpor8qfpor8qfpor_ukfqkg.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/WhatsApp_Image_2026-06-09_at_08.46.30_hmsagi",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703429/GlowRious_Vitamin_C_1_kb7a2p.png",
     ],
     specs: [
       { label: "Net quantity", value: "30 ml" },
@@ -444,8 +444,8 @@ export const products: Product[] = [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703531/GlowRious_Night_Cream_lkuy9p.png",
     images: [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703531/GlowRious_Night_Cream_lkuy9p.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107508/Night_Cream_01_izzdta.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107506/Night_Cream_box_w5jajz.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107499/Gemini_Generated_Image_abfyz9abfyz9abfy_yxojye.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781107499/Gemini_Generated_Image_19y2n519y2n519y2_yrcx2p.png",
     ],
     specs: [
       { label: "Net quantity", value: "50 ml" },
@@ -521,8 +521,7 @@ export const products: Product[] = [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703656/GlowRious_Cleanser_ibsi70.png",
     images: [
       "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703656/GlowRious_Cleanser_ibsi70.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106612/Gemini_Generated_Image_wyy3xlwyy3xlwyy3_bgvl85.png",
-      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781106612/Gemini_Generated_Image_xdhdjgxdhdjgxdhd_r4xdnm.png",
+      "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781703656/GlowRious_Cleanser_ibsi70.png"
     ],
     specs: [
       { label: "Net quantity", value: "150 ml" },

@@ -14,7 +14,6 @@ export function Footer() {
           {/* Left: Logo & Tagline */}
           <div className="flex flex-col md:flex-1">
             <FooterBrand />
-        
           </div>
 
           {/* Right: Join Community Section with Offset */}
@@ -30,7 +29,16 @@ export function Footer() {
         <div className="mb-12 grid gap-12 md:mb-14 md:grid-cols-3 md:gap-10 lg:gap-16">
           <FooterLinkGroup title="Navigation" links={footerData.quickLinks} />
           <FooterContact />
-          <FooterLinkGroup title="Legal" links={footerData.legalLinks} align="right" />
+          <div className="md:text-left">
+            <h4 className="text-sm font-semibold uppercase tracking-widest text-white">Legal</h4>
+            <div className="mt-5 grid gap-4 grid-cols-2 text-sm text-slate-400">
+              {footerData.legalLinks.map((link) => (
+                <a key={link.label} href={link.href} className="transition-all duration-300 hover:text-white">
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
         <FooterBottom />
