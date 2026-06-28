@@ -6,7 +6,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "FAQs - Skincare, Ordering, Delivery & Returns",
   description:
     "Find answers to common GlowRious questions about skincare products, NEOSOME technology, ordering, delivery, returns, account support, and partnerships.",
-  path: "/faqs",
+  path: "https://glowrious.shnmart.com/faqs",
   keywords: [
     "GlowRious FAQs",
     "GlowRious questions",
