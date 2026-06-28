@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { site } from "@/lib/site";
 import Image from "next/image";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -45,22 +44,23 @@ export default function PrivacyPolicyPage() {
                 className="h-auto w-auto object-contain"
               />
               <div>
-                <p className="text-sm font-semibold text-slate-600">{site.name}</p>
                 <h1 className="mt-2 text-3xl font-bold text-slate-900">Privacy Policy</h1>
               </div>
             </div>
 
             <div className="mt-10 space-y-8 text-slate-700">
+              
+
               <div>
-                <p className="text-sm text-slate-600 italic">
-                  Last updated: June 18, 2026
+                <h2 className="text-xl font-semibold text-slate-900">Privacy Policy</h2>
+                <p className="mt-3 text-sm leading-relaxed">
+                  This is a starting draft, not legal advice. Every bracketed <strong>[placeholder]</strong> must be replaced with a real value from GlowRious / Yuva Trade Concern before publishing. Have the final version reviewed by a lawyer familiar with Nepal consumer and e-commerce law before it goes live.
                 </p>
                 <p className="mt-4 text-sm leading-relaxed">
-                  This Privacy Policy explains how GlowRious / Yuva Trade Concern ("we," "us," "our") collects, uses, shares, and protects information when you visit glowrious.shnmart.com or purchase our products (the "Site").
+                  This Privacy Policy explains how <strong>GlowRious</strong> (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;) collects, uses, shares, and protects information when you visit glowrious.shnmart.com or purchase our products (the &quot;Site&quot;).
                 </p>
               </div>
 
-              {/* 1. Information We Collect */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">1. Information We Collect</h2>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -73,11 +73,11 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
-                    <span><strong>Order information:</strong> products purchased, order history, and payment confirmation. We do not store full card numbers; these are processed securely by our payment processor.</span>
+                    <span><strong>Order information:</strong> products purchased, order history, and payment confirmation (we do not store full card numbers: these are processed by <strong>[payment processor name]</strong>).</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
-                    <span><strong>Account information:</strong> username, password (stored encrypted), and saved addresses.</span>
+                    <span><strong>Account information, if you create one:</strong> username, password (stored encrypted), and saved addresses.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
@@ -88,9 +88,11 @@ export default function PrivacyPolicyPage() {
                     <span><strong>Technical information:</strong> IP address, browser type, device type, and pages visited, collected automatically via cookies and similar technologies.</span>
                   </li>
                 </ul>
+                <p className="mt-4 text-sm italic text-slate-600">
+                  Drafting note: Confirm whether the site uses any analytics tools (e.g., Google Analytics, Meta Pixel) and list them specifically: this affects what must be disclosed here and whether a cookie consent banner is required.
+                </p>
               </div>
 
-              {/* 2. How We Use Your Information */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">2. How We Use Your Information</h2>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed">
@@ -100,7 +102,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
-                    <span>To respond to inquiries, including skincare questions submitted via our contact form.</span>
+                    <span>To respond to inquiries, including skincare questions submitted via <strong>[consultation/contact information]</strong>.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
@@ -117,7 +119,6 @@ export default function PrivacyPolicyPage() {
                 </ul>
               </div>
 
-              {/* 3. How We Share Your Information */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">3. How We Share Your Information</h2>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -126,7 +127,7 @@ export default function PrivacyPolicyPage() {
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed">
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
-                    <span>Shipping and logistics partners who will deliver your order.</span>
+                    <span>Shipping and logistics partners will deliver your order.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
@@ -134,11 +135,11 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
-                    <span>ShnMart / marketplace platform, since orders are currently completed through ShnMart.com.</span>
+                    <span><strong>[ShnMart]</strong>, since orders are currently completed through <a href="https://shnmart.com" className="text-blue-600 hover:underline">shnmart.com</a>.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
-                    <span>Service providers who help us operate the Site (e.g., hosting, email delivery), bound by confidentiality obligations.</span>
+                    <span>Service providers who help us operate the Site (e.g. hosting, email delivery), bound by confidentiality obligations.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
@@ -147,23 +148,23 @@ export default function PrivacyPolicyPage() {
                 </ul>
               </div>
 
-              {/* 4. Cookies and Tracking */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">4. Cookies and Tracking</h2>
                 <p className="mt-3 text-sm leading-relaxed">
                   The Site may use cookies to remember your preferences, keep you logged in, and understand how visitors use the Site. You can disable cookies in your browser settings, though some features may not work correctly without them.
                 </p>
-              </div>
-
-              {/* 5. Data Retention */}
-              <div>
-                <h2 className="text-xl font-semibold text-slate-900">5. Data Retention</h2>
-                <p className="mt-3 text-sm leading-relaxed">
-                  We retain your personal information for as long as your account is active or as needed to provide services, comply with legal obligations, resolve disputes, and enforce our agreements. Order records are typically retained for 7 years for tax and accounting purposes.
+                <p className="mt-4 text-sm italic text-slate-600">
+                  Drafting note: Add a cookie table here (cookie name, purpose, duration, first/third-party) once analytics and marketing tools are finalized.
                 </p>
               </div>
 
-              {/* 6. Data Security */}
+              <div>
+                <h2 className="text-xl font-semibold text-slate-900">5. Data Retention</h2>
+                <p className="mt-3 text-sm leading-relaxed">
+                  We retain your personal information for as long as your account is active or as needed to provide services, comply with legal obligations, resolve disputes, and enforce our agreements. Order records are typically retained for <strong>[3 years]</strong> for tax and accounting purposes.
+                </p>
+              </div>
+
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">6. Data Security</h2>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -171,7 +172,6 @@ export default function PrivacyPolicyPage() {
                 </p>
               </div>
 
-              {/* 7. Your Rights */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">7. Your Rights</h2>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -192,7 +192,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-slate-600">•</span>
-                    <span>Withdraw consent to marketing communications at any time by clicking "unsubscribe" or contacting us directly.</span>
+                    <span>Withdraw consent to marketing communications at any time by clicking “unsubscribe” or contacting us directly.</span>
                   </li>
                 </ul>
                 <p className="mt-4 text-sm leading-relaxed">
@@ -200,23 +200,20 @@ export default function PrivacyPolicyPage() {
                 </p>
               </div>
 
-              {/* 8. Children's Privacy */}
               <div>
-                <h2 className="text-xl font-semibold text-slate-900">8. Children's Privacy</h2>
+                <h2 className="text-xl font-semibold text-slate-900">8. Children&apos;s Privacy</h2>
                 <p className="mt-3 text-sm leading-relaxed">
                   The Site is not directed at children under 18. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can remove it.
                 </p>
               </div>
 
-              {/* 9. Changes to This Policy */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">9. Changes to This Policy</h2>
                 <p className="mt-3 text-sm leading-relaxed">
-                  We may update this Privacy Policy from time to time. The "Last updated" date below will reflect the most recent revision. Continued use of the Site after changes are posted constitutes acceptance of the updated policy.
+                  We may update this Privacy Policy from time to time. The “Last updated” date below will reflect the most recent revision. Continued use of the Site after changes are posted constitutes acceptance of the updated policy.
                 </p>
               </div>
 
-              {/* 10. Contact Us */}
               <div className="rounded-lg bg-slate-50 p-6">
                 <h2 className="text-xl font-semibold text-slate-900">10. Contact Us</h2>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -236,14 +233,14 @@ export default function PrivacyPolicyPage() {
                     </a>
                   </p>
                   <p>
-                    <strong>Address:</strong> {site.contact.address}
+                    <strong>Address:</strong> <strong>[Suncity Road, Kageshwori Manohara - 09, Kathmandu, Nepal]</strong>
                   </p>
                 </div>
               </div>
 
               <div className="border-t border-slate-200 pt-6">
                 <p className="text-xs text-slate-500 italic">
-                  This policy is current as of June 18, 2026. GlowRious reserves the right to update this Privacy Policy at any time. Please check this page regularly for updates.
+                  Last updated: June 25, 2026 10:54 PM +05:45
                 </p>
               </div>
             </div>

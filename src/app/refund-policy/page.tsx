@@ -51,16 +51,18 @@ export default function RefundPolicyPage() {
             </div>
 
             <div className="mt-10 space-y-8 text-slate-700">
+              
+
               <div>
-                <p className="text-sm text-slate-600 italic">
-                  Last updated: June 18, 2026
+                <h2 className="text-xl font-semibold text-slate-900">Refund & Return Policy</h2>
+                <p className="mt-3 text-sm leading-relaxed">
+                  We want you to be happy with your GlowRious purchase. This policy explains when and how you can return a product or request a refund.
                 </p>
                 <p className="mt-4 text-sm leading-relaxed">
-                  We want you to be happy with your GlowRious purchase. This policy explains when and how you can return a product or request a refund.
+                  This is a starting draft, not legal advice. Have the final version reviewed by a lawyer familiar with Nepal consumer and e-commerce law before it goes live.
                 </p>
               </div>
 
-              {/* Quick Reference */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">Quick Reference</h2>
                 <div className="mt-4 overflow-x-auto">
@@ -68,7 +70,7 @@ export default function RefundPolicyPage() {
                     <tbody className="divide-y divide-slate-200 border border-slate-200">
                       <tr className="bg-slate-50">
                         <td className="px-4 py-3 font-semibold text-slate-900">Return window</td>
-                        <td className="px-4 py-3">7 days from delivery date</td>
+                        <td className="px-4 py-3">3 business days from delivery date with proof</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Condition required</td>
@@ -76,60 +78,60 @@ export default function RefundPolicyPage() {
                       </tr>
                       <tr className="bg-slate-50">
                         <td className="px-4 py-3 font-semibold text-slate-900">Who pays return shipping</td>
-                        <td className="px-4 py-3">Customer (except for defective/damaged items)</td>
+                        <td className="px-4 py-3">GlowRious covers return shipping if the error occurs from our company side</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Refund method</td>
-                        <td className="px-4 py-3">Original payment method within 5–10 business days of receiving returned item</td>
+                        <td className="px-4 py-3">Original payment method within 2-3 business days of receiving the returned item</td>
                       </tr>
                       <tr className="bg-slate-50">
                         <td className="px-4 py-3 font-semibold text-slate-900">Exchanges offered?</td>
-                        <td className="px-4 py-3">Yes, for equal value items, subject to availability</td>
+                        <td className="px-4 py-3">No, except when the company sends defective or damaged products</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
 
-              {/* 1. Eligibility */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">1. Eligibility for Returns</h2>
                 <p className="mt-3 text-sm leading-relaxed">You may request a return or refund if:</p>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed">
                   <li className="flex gap-3">
-                    <span className="text-slate-600">•</span>
+                    <span className="text-slate-600">-</span>
                     <span>The product arrives damaged, defective, or incorrect (wrong item shipped).</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-slate-600">•</span>
-                    <span>You request a return within 7 days of delivery, and the product is unused, unopened, and in its original packaging with seal intact.</span>
+                    <span className="text-slate-600">-</span>
+                    <span>You request a return within 48 hours of delivery, and the product is unused, unopened, and in its original packaging with seal intact.</span>
                   </li>
                 </ul>
                 <p className="mt-4 text-sm leading-relaxed text-slate-600">
-                  Due to the personal-care nature of skincare and haircare products, we cannot accept returns of opened or used products for hygiene and safety reasons.
+                  Due to the personal-care nature of skincare and haircare products, we cannot accept returns of opened or used products, except where the product is defective, for hygiene and safety reasons.
+                </p>
+                <p className="mt-3 text-xs italic text-slate-500">
+                  Drafting note: Hygiene-based return restrictions are standard for cosmetics, but confirm the wording against any consumer protection requirements in Nepal, as some jurisdictions require returns to be allowed even on opened goods within a statutory period.
                 </p>
               </div>
 
-              {/* 2. Non-Returnable Items */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">2. Non-Returnable Items</h2>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed">
                   <li className="flex gap-3">
-                    <span className="text-slate-600">•</span>
-                    <span>Products marked "final sale" or purchased during a clearance promotion.</span>
+                    <span className="text-slate-600">-</span>
+                    <span>Products marked &quot;final sale&quot; or purchased during a clearance promotion.</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-slate-600">•</span>
+                    <span className="text-slate-600">-</span>
                     <span>Opened or used skincare/haircare products, unless defective.</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-slate-600">•</span>
+                    <span className="text-slate-600">-</span>
                     <span>Gift cards, if offered.</span>
                   </li>
                 </ul>
               </div>
 
-              {/* 3. How to Request */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">3. How to Request a Return</h2>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -154,38 +156,38 @@ export default function RefundPolicyPage() {
                 </p>
               </div>
 
-              {/* 4. Damaged or Incorrect Items */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">4. Damaged or Incorrect Items</h2>
                 <p className="mt-3 text-sm leading-relaxed">
-                  If you receive a damaged, defective, or incorrect item, please contact us within 48–72 hours of delivery with photos of the product and packaging. We will arrange a replacement or full refund, including return shipping costs, at no cost to you.
+                  If you receive a damaged, defective, or incorrect item, please contact us within 48-72 hours of delivery with photos of the product and packaging. We will arrange a replacement or full refund, including return shipping costs, at no cost to you.
                 </p>
               </div>
 
-              {/* 5. Refund Processing */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">5. Refund Processing</h2>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed">
                   <li className="flex gap-3">
-                    <span className="text-slate-600">•</span>
+                    <span className="text-slate-600">-</span>
                     <span>Once we receive and inspect your return, we will notify you whether the refund is approved.</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-slate-600">•</span>
-                    <span>Approved refunds are issued to your original payment method within 5–10 business days. Processing times after that point depend on your bank or payment provider.</span>
+                    <span className="text-slate-600">-</span>
+                    <span>Approved refunds are issued to your original payment method within 2-3 business days. Processing times after that point depend on your bank or payment provider.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-slate-600">-</span>
+                    <span>If you paid via ShnMart checkout, refunds may be subject to ShnMart&apos;s own payment processing timelines in addition to ours.</span>
                   </li>
                 </ul>
               </div>
 
-              {/* 6. Exchanges */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">6. Exchanges</h2>
                 <p className="mt-3 text-sm leading-relaxed">
-                  We currently offer exchanges for a different size or product of equal value, subject to availability. To request an exchange, follow the same process as a return and let us know your preferred replacement item.
+                  We do not currently offer exchanges, except where the company sends defective or damaged products. If your item is defective or damaged, follow the same process as a return and we will confirm the available replacement or refund option.
                 </p>
               </div>
 
-              {/* 7. Shipping Costs */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">7. Shipping Costs</h2>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -193,19 +195,17 @@ export default function RefundPolicyPage() {
                 </p>
               </div>
 
-              {/* 8. Late or Missing Refunds */}
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">8. Late or Missing Refunds</h2>
                 <p className="mt-3 text-sm leading-relaxed">
-                  If you haven't received a refund after the timeframe above, please first check with your bank or card provider, as processing times vary. If you still have concerns, contact us at{" "}
+                  If you haven&apos;t received a refund after the timeframe above, please first check with your bank or card provider, as processing times vary. If you still have concerns, contact us at{" "}
                   <a href="mailto:glowrious.info@gmail.com" className="text-blue-600 hover:underline">
                     glowrious.info@gmail.com
                   </a>{" "}
-                  and we'll look into it.
+                  and we&apos;ll look into it.
                 </p>
               </div>
 
-              {/* 9. Contact Us */}
               <div className="rounded-lg bg-slate-50 p-6">
                 <h2 className="text-xl font-semibold text-slate-900">9. Contact Us</h2>
                 <div className="mt-4 space-y-3 text-sm">
