@@ -60,7 +60,7 @@ export default async function EventDetailPage({ params }: Props) {
         <div className="mb-10 overflow-hidden rounded-[2rem] border border-slate-200/70 bg-white/95 p-8 shadow-xl shadow-slate-900/5">
           <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.32em] text-amber-600">Event details</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#eea504]">Event details</p>
               <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
                 {event.title}
               </h1>

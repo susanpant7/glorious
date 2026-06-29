@@ -3,7 +3,7 @@ export function HeroFeatureCard() {
     <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-slate-950/40 ring-1 ring-white/10">
       <div className="space-y-6">
         <div className="rounded-3xl bg-slate-800/60 p-6">
-          <p className="text-sm uppercase tracking-[0.3em] text-amber-300">SKIN LIGHTENING SERUM </p>
+          <p className="text-sm uppercase tracking-[0.3em] text-[#eea504]">SKIN LIGHTENING SERUM </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white">
             100% Vegan & cruelty-free formulation
           </h2>

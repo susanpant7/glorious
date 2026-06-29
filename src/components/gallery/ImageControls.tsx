@@ -25,7 +25,7 @@ function ImageControlsComponent({
   onZoomOut,
 }: ImageControlsProps) {
   const buttonClass =
-    "inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white shadow-xl shadow-black/15 backdrop-blur-md transition duration-200 hover:scale-105 hover:bg-white hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-200 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100 disabled:hover:bg-white/10 disabled:hover:text-white";
+    "inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white shadow-xl shadow-black/15 backdrop-blur-md transition duration-200 hover:scale-105 hover:bg-white hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eea504] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100 disabled:hover:bg-white/10 disabled:hover:text-white";
 
   return (
     <div className="flex flex-wrap items-center justify-center gap-3">

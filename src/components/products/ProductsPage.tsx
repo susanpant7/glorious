@@ -66,7 +66,7 @@ export function ProductsPage() {
   return (
     <main className="mx-auto max-w-7xl space-y-8 px-4 py-6 sm:px-6 lg:px-8">
       <div className="max-w-4xl space-y-4">
-        <p className="text-sm uppercase tracking-[0.32em] text-[var(--theme)]">{productsPageText.subtitle}</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#eea504]">{productsPageText.subtitle}</p>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{productsPageText.title}</h1>
         <p className="max-w-2xl text-base leading-7 text-slate-600">{productsPageText.description}</p>
       </div>
@@ -90,7 +90,7 @@ export function ProductsPage() {
                 type="button"
                 onClick={handleClearAll}
                 aria-label="Reset filters"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-amber-400 hover:bg-amber-50 hover:text-amber-700"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-[#eea504] hover:bg-[#eea504]/10 hover:text-[#eea504]"
               >
                 <span aria-hidden="true">↺</span>
               </button>

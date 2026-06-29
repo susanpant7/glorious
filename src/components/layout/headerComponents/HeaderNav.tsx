@@ -1,14 +1,21 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { site } from "@/lib/site";
+import { cn } from "@/lib/utils";
 
 const navLinks = site.navLinks;
+
+function isNavLinkActive(pathname: string, href: string) {
+  return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
+}
 
 export function HeaderNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(64);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (mobileMenuOpen) {
@@ -39,15 +46,22 @@ export function HeaderNav() {
     <>
       {/* Desktop Navigation */}
       <div className="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-700">
-        {navLinks.map((link) => (
-          <Link
-            key={link.label}
-            href={link.href}
-            className="transition-colors duration-200 text-slate-700 hover:text-amber-600 focus:text-amber-600"
-          >
-            {link.label}
-          </Link>
-        ))}
+        {navLinks.map((link) => {
+          const isActive = isNavLinkActive(pathname, link.href);
+
+          return (
+            <Link
+              key={link.label}
+              href={link.href}
+              className={cn(
+                "transition-colors duration-200 text-slate-700 hover:text-[#eea504] focus:text-[#eea504] active:text-[#eea504]",
+                isActive && "text-[#eea504]"
+              )}
+            >
+              {link.label}
+            </Link>
+          );
+        })}
       </div>
 
       {/* Mobile Hamburger Button */}
@@ -84,16 +98,23 @@ export function HeaderNav() {
               <div className="mb-4 pb-4 border-b border-slate-200">
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">Menu</p>
               </div>
-              {navLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-all duration-200"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = isNavLinkActive(pathname, link.href);
+
+                return (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={cn(
+                      "block px-4 py-3 text-base font-semibold text-slate-800 hover:text-[#eea504] hover:bg-amber-50 focus:text-[#eea504] active:text-[#eea504] rounded-lg transition-all duration-200",
+                      isActive && "text-[#eea504]"
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </>

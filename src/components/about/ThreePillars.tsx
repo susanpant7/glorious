@@ -31,14 +31,14 @@ export function ThreePillars() {
         {pillars.map((pillar, index) => (
           <div
             key={index}
-            className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/20"
+            className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#eea504]/20"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#eea504]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
             <div className="relative z-10 space-y-4">
               <div className="text-4xl">{pillar.icon}</div>
 
-              <h3 className="text-lg font-semibold text-slate-950 transition-colors duration-300 group-hover:text-amber-600">
+              <h3 className="text-lg font-semibold text-slate-950 transition-colors duration-300 group-hover:text-[#eea504] group-active:text-[#eea504]">
                 {pillar.title}
               </h3>
 
@@ -47,7 +47,7 @@ export function ThreePillars() {
               </p>
             </div>
 
-            <div className="absolute inset-0 rounded-2xl border border-amber-200 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            <div className="absolute inset-0 rounded-2xl border border-[#eea504]/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
           </div>
         ))}
       </div>

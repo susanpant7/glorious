@@ -20,7 +20,7 @@ export function FooterSocial() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label={social.label}
-            className="group flex h-12 w-12 items-center justify-center rounded-full border border-slate-600 text-slate-400 transition-all duration-300 hover:border-amber-400 hover:bg-amber-400/10 hover:text-amber-400"
+            className="group flex h-12 w-12 items-center justify-center rounded-full border border-slate-600 text-slate-400 transition-all duration-300 hover:border-[#eea504] hover:bg-[#eea504]/10 hover:text-[#eea504]"
           >
             <SocialIcon icon={social.icon} />
           </a>

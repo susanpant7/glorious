@@ -7,7 +7,7 @@ export function EventCard({ event }: { event: Event }) {
   return (
     <Link href={`/events/${event.id}`} className="group block">
       <Card className="relative h-full overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-40px_rgba(15,23,42,0.35)]">
-        <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-amber-500 via-orange-400 to-fuchsia-500" />
+        <div className="absolute inset-x-0 top-0 h-2 bg-[#eea504]" />
 
         <div className="relative mx-6 -mt-4 overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950 shadow-2xl shadow-slate-950/10">
           <img
@@ -45,10 +45,10 @@ export function EventCard({ event }: { event: Event }) {
         </CardContent>
 
         <CardFooter className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/70 bg-slate-50 px-6 py-4">
-          <span className="text-sm font-semibold text-slate-950 transition duration-300 group-hover:text-amber-600">
+          <span className="text-sm font-semibold text-slate-950 transition duration-300 group-hover:text-[#eea504] group-focus:text-[#eea504] group-active:text-[#eea504]">
             View details
           </span>
-          <span className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition duration-300 group-hover:border-amber-500 group-hover:text-amber-700">
+          <span className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition duration-300 group-hover:border-[#eea504] group-hover:text-[#eea504] group-focus:border-[#eea504] group-focus:text-[#eea504] group-active:border-[#eea504] group-active:text-[#eea504]">
             RSVP
           </span>
         </CardFooter>

@@ -91,11 +91,13 @@ export function TestimonialsSection() {
                       </div>
                     </div>
 
-                    <p className="max-w-3xl text-lg leading-8 text-slate-100 sm:text-xl">"{testimonial.quote}"</p>
+                    <p className="max-w-3xl text-lg leading-8 text-slate-100 sm:text-xl">
+                      &quot;{testimonial.quote}&quot;
+                    </p>
 
                     <div>
                       <p className="text-xl font-semibold tracking-tight text-white">{testimonial.name}</p>
-                      <p className="mt-2 text-sm uppercase tracking-[0.28em] text-amber-300">
+                      <p className="mt-2 text-sm uppercase tracking-[0.28em] text-[#eea504]">
                         {testimonial.profession}
                       </p>
                     </div>
@@ -111,7 +113,7 @@ export function TestimonialsSection() {
                   type="button"
                   onClick={() => setActiveIndex(index)}
                   className={`h-3 w-3 rounded-full transition ${
-                    index === activeIndex ? "bg-amber-400" : "bg-white/30 hover:bg-white/50"
+                    index === activeIndex ? "bg-[#eea504]" : "bg-white/30 hover:bg-white/50"
                   }`}
                   aria-label={`Show testimonial ${index + 1}`}
                 />

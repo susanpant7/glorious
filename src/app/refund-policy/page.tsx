@@ -58,9 +58,6 @@ export default function RefundPolicyPage() {
                 <p className="mt-3 text-sm leading-relaxed">
                   We want you to be happy with your GlowRious purchase. This policy explains when and how you can return a product or request a refund.
                 </p>
-                <p className="mt-4 text-sm leading-relaxed">
-                  This is a starting draft, not legal advice. Have the final version reviewed by a lawyer familiar with Nepal consumer and e-commerce law before it goes live.
-                </p>
               </div>
 
               <div>

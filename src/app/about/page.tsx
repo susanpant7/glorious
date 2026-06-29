@@ -59,7 +59,7 @@ export default function AboutPage() {
           <div className="rounded-2xl bg-white p-10 shadow-sm">
             <div className="flex flex-col items-center gap-8 text-center">
               <Image
-                src="https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781273539/Logo_GlowRious_page-0001_gemjsg.png"
+                src="https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781273538/headerlogo_1_p64epf.png"
                 alt="glowrious"
                 width={240}
                 height={80}
@@ -105,7 +105,7 @@ export default function AboutPage() {
                     "Daily Use",
                   ].map((claim) => (
                     <div key={claim} className="flex items-start gap-3 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-amber-50 text-lg font-bold text-amber-600">
+                      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#eea504]/10 text-lg font-bold text-[#eea504]">
                         &#10003;
                       </div>
                       <div>
