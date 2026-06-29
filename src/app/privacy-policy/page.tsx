@@ -53,9 +53,7 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">Privacy Policy</h2>
-                <p className="mt-3 text-sm leading-relaxed">
-                  This is a starting draft, not legal advice. Every bracketed <strong>[placeholder]</strong> must be replaced with a real value from GlowRious / Yuva Trade Concern before publishing. Have the final version reviewed by a lawyer familiar with Nepal consumer and e-commerce law before it goes live.
-                </p>
+               
                 <p className="mt-4 text-sm leading-relaxed">
                   This Privacy Policy explains how <strong>GlowRious</strong> (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;) collects, uses, shares, and protects information when you visit glowrious.shnmart.com or purchase our products (the &quot;Site&quot;).
                 </p>

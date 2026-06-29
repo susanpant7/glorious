@@ -14,12 +14,6 @@ export const galleryImages: GalleryImage[] = [
     src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105883/Gemini_Generated_Image_c82r93c82r93c82r_vgw0dq.png",
   },
   {
-    id: "gemini-asfcm9",
-    title: "Gemini asfcm9",
-    description: "Generated image",
-    src: "https://res.cloudinary.com/dfyqhn5fy/image/upload/v1781105884/Gemini_Generated_Image_asfcm9asfcm9asfc_zkkuts.png",
-  },
-  {
     id: "gemini-9y49y3",
     title: "Gemini 9y49y3",
     description: "Generated image",

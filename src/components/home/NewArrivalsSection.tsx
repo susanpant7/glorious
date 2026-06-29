@@ -40,7 +40,7 @@ export function NewArrivalsSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.32em] text-[var(--theme)]">{site.featured.subtitle}</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#eea504]">{site.featured.subtitle}</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
               {site.featured.title}
             </h2>

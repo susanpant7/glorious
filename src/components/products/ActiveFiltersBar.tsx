@@ -36,7 +36,7 @@ export function ActiveFiltersBar({ sections, activeFilters, onRemoveFilter, onCl
         <button
           type="button"
           onClick={onClearAll}
-          className="text-xs font-semibold uppercase tracking-[0.32em] text-amber-600 hover:text-amber-400"
+          className="text-xs font-semibold uppercase tracking-[0.32em] text-[#eea504] hover:text-[#eea504]/80"
         >
           Clear all
         </button>

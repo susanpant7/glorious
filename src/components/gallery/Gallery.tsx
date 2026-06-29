@@ -23,7 +23,7 @@ const GalleryCard = memo(function GalleryCard({ image, index, onOpen }: GalleryC
       type="button"
       aria-label="Open image in viewer"
       onClick={() => onOpen(index)}
-      className="group relative block h-80 w-full cursor-zoom-in overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-200 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+      className="group relative block h-80 w-full cursor-zoom-in overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#eea504]/40 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eea504]"
     >
       <Image
         src={image.src}
@@ -81,7 +81,7 @@ export function Gallery({ images }: GalleryProps) {
     <section className="bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-600">Gallery</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#eea504]">Gallery</p>
           <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
             GlowRious visual gallery
           </h1>
@@ -105,12 +105,12 @@ export function Gallery({ images }: GalleryProps) {
                   className="btn-train inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-medium text-white transition-transform hover:-translate-y-0.5 disabled:opacity-60 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--theme)]/40"
                 >
                   {isLoadingMore ? (
-                    <svg className="h-5 w-5 animate-spin text-amber-400" viewBox="0 0 24 24" fill="none">
+                    <svg className="h-5 w-5 animate-spin text-[#eea504]" viewBox="0 0 24 24" fill="none">
                       <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" opacity="0.25" />
                       <path d="M22 12a10 10 0 00-10-10" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   ) : (
-                    <ChevronDown className="h-5 w-5 text-amber-400" />
+                    <ChevronDown className="h-5 w-5 text-[#eea504]" />
                   )}
                   <span className="">{isLoadingMore ? "Loading..." : "Load more"}</span>
                 </button>

@@ -5,7 +5,7 @@ export function HeroIntro() {
 
   return (
     <div className="space-y-3">
-      <span className="inline-flex rounded-full bg-amber-300/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-amber-200 sm:text-sm">
+      <span className="inline-flex rounded-full bg-[#eea504]/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-[#eea504] sm:text-sm">
         {h.badge}
       </span>
       <div>

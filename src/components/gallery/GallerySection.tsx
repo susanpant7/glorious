@@ -26,7 +26,7 @@ export function GallerySection({
     <section className="bg-white pt-16 pb-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 flex flex-col items-center gap-4 text-center">
-          <p className="text-sm uppercase tracking-[0.32em] text-amber-600">Gallery</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#eea504]">Gallery</p>
           <h2 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
             Visual inspiration from our latest collection
           </h2>

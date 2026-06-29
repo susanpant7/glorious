@@ -53,9 +53,7 @@ export default function TermsConditionsPage() {
 
               <div>
                 <h2 className="text-xl font-semibold text-slate-900">Terms and Conditions</h2>
-                <p className="mt-3 text-sm leading-relaxed">
-                  This is a starting draft, not legal advice. Every bracketed <strong>[placeholder]</strong> must be replaced with a real value from GlowRious / Yuva Trade Concern before publishing. Have the final version reviewed by a lawyer familiar with Nepal consumer and e-commerce law before it goes live.
-                </p>
+              
                 <p className="mt-4 text-sm leading-relaxed">
                   These Terms and Conditions (&quot;Terms&quot;) govern your use of glowrious.shnmart.com (the &quot;Site&quot;) and any purchase of products from <strong>[GlowRious]</strong> (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;). By accessing the Site or placing an order, you agree to these Terms.
                 </p>

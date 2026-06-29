@@ -39,7 +39,7 @@ export default function ContactPage() {
 
       <div className="mx-auto max-w-4xl px-6">
         <div className="mb-8">
-          <p className="text-sm uppercase tracking-[0.3em] text-amber-600">Get in touch</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#eea504]">Get in touch</p>
           <h1 className="mt-3 text-3xl font-bold text-slate-950">Contact Us</h1>
           <p className="mt-4 text-base text-slate-600">Questions about an order? Need product advice? We're here to help.</p>
         </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
               <p className="mt-2 text-sm text-slate-700">Phone: {c.phone}</p>
               <p className="mt-2 text-sm text-slate-700">
                 Email:{" "}
-                <a href={`mailto:${c.email}`} className="text-amber-600">
+                <a href={`mailto:${c.email}`} className="text-[#eea504]">
                   {c.email}
                 </a>
               </p>
@@ -73,14 +73,14 @@ export default function ContactPage() {
             <h3 className="text-lg font-semibold">Customer support</h3>
             <p className="mt-3 text-sm text-slate-700">
               For order enquiries, returns, or product questions, email us at{" "}
-              <a href={`mailto:${c.email}`} className="text-amber-600">
+              <a href={`mailto:${c.email}`} className="text-[#eea504]">
                 {c.email}
               </a>{" "}
               or call {c.phone}.
             </p>
             <p className="mt-4 text-sm">
               Want to browse products?{" "}
-              <Link href="/products" className="text-amber-600 hover:underline">
+              <Link href="/products" className="text-[#eea504] hover:underline">
                 View our catalog
               </Link>
               .

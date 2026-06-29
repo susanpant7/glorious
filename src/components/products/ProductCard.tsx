@@ -49,7 +49,7 @@ export function ProductCard({ product }: { product: Product }) {
         </CardContent>
 
         <CardFooter className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/70 bg-slate-50 px-6 py-4">
-          <span className="text-sm font-semibold text-slate-950 transition duration-300 group-hover:text-amber-600">
+          <span className="text-sm font-semibold text-slate-950 transition duration-300 group-hover:text-[#eea504] group-focus:text-[#eea504] group-active:text-[#eea504]">
             View details
           </span>
           <Button asChild size="sm">

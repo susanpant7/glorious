@@ -104,7 +104,7 @@ export function HeroProductSlider() {
             </div>
 
             <div className="relative px-1 pb-1">
-              <span className="inline-flex items-center gap-2 rounded-full bg-amber-300/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-100">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#eea504]/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#eea504]">
                 <Sparkles className="size-3.5" />
                 {activeProduct.category}
               </span>
@@ -136,7 +136,7 @@ export function HeroProductSlider() {
               <Link
                 href={productHref}
                 onPointerDown={(e) => e.stopPropagation()}
-                className="cursor-pointer text-sm font-semibold text-white/85 underline-offset-4 transition duration-500 hover:text-amber-100 hover:underline"
+                className="cursor-pointer text-sm font-semibold text-white/85 underline-offset-4 transition duration-500 hover:text-[#eea504] hover:underline"
               >
                 Learn More
               </Link>
@@ -171,7 +171,7 @@ export function HeroProductSlider() {
             aria-label="Previous product"
             onClick={showPrevious}
             onPointerDown={(event) => event.stopPropagation()}
-            className="inline-flex size-11 cursor-pointer items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-500 hover:-translate-y-0.5 hover:border-amber-200/60 hover:bg-amber-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-200"
+            className="inline-flex size-11 cursor-pointer items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-500 hover:-translate-y-0.5 hover:border-[#eea504]/60 hover:bg-[#eea504]/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eea504]"
           >
             <ChevronLeft className="size-5" />
           </button>
@@ -180,7 +180,7 @@ export function HeroProductSlider() {
             aria-label="Next product"
             onClick={showNext}
             onPointerDown={(event) => event.stopPropagation()}
-            className="inline-flex size-11 cursor-pointer items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-500 hover:-translate-y-0.5 hover:border-amber-200/60 hover:bg-amber-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-200"
+            className="inline-flex size-11 cursor-pointer items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-500 hover:-translate-y-0.5 hover:border-[#eea504]/60 hover:bg-[#eea504]/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eea504]"
           >
             <ChevronRight className="size-5" />
           </button>
